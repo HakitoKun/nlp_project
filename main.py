@@ -3,6 +3,8 @@
 import re
 import json
 import pandas as pd
+import tensorflow as tf
+import tensorflow_datasets as tfds
 from tqdm import tqdm
 
 data_file = 'data/arxiv-metadata-oai-snapshot.json'
@@ -77,11 +79,13 @@ def make_dataset(n:int = 100):
     return
 
 
-
+"""
 def generate_csv(n:int=100):
     val_size = int(n/20)
     output_file = 'out_train.csv'
     output_file_val = 'out_val.csv'
+    builder = tfds.builder("scientific_papers", data_dir="./")
+    builder.download_and_prepare()
     ds = builder.as_dataset(split="train")
     ds = ds.take(n)
     with open(output_file, 'a') as f:
@@ -89,7 +93,7 @@ def generate_csv(n:int=100):
         for example in ds:  # example is {'image': tf.Tensor, 'label': tf.Tensor}
             abstract = example["abstract"]
             article = example["article"]
-            f.write(article.decode("utf-8") + "," + abstract.decode("utf-8") + "\n")
+            f.write(article.numpy().decode("utf-8") + "," + abstract.numpy().decode("utf-8") + "\n")
     ds = builder.as_dataset(split="validation")
     ds = ds.take(val_size)
     with open(output_file_val, 'a') as f:
@@ -97,10 +101,35 @@ def generate_csv(n:int=100):
         for example in ds:  # example is {'image': tf.Tensor, 'label': tf.Tensor}
             abstract = example["abstract"]
             article = example["article"]
-            f.write(article.decode("utf-8") + "," + abstract.decode("utf-8") + "\n")
+            f.write(article.numpy().decode("utf-8") + "," + abstract.numpy().decode("utf-8") + "\n")
+"""
 
 
+def generate_csv(n:int=10000):
+    val_size = int(n/20)
+    output_file = 'out_train.csv'
+    output_file_val = 'out_val.csv'
+    builder = tfds.builder("scientific_papers", data_dir="./")
+    builder.download_and_prepare()
+    ds = builder.as_dataset(split="train")
+    ds = ds.take(n)
+    print(ds)
+    with open(output_file, 'w') as f:
+        f.write("text,summary\n")
+        for example in ds:  # example is {'image': tf.Tensor, 'label': tf.Tensor}
+            abstract = example["abstract"]
+            article = example["article"]
+            f.write('"'+bytes.decode(article.numpy()).replace('"', '\'').replace('\n', ' ') + '" ,'+'"' + bytes.decode(abstract.numpy()).replace('\n', ' ').replace('"', '\'')+'"'+ "\n")
+    ds = builder.as_dataset(split="validation")
+    ds = ds.take(val_size)
+    with open(output_file_val, 'w') as f:
+        f.write("text,summary\n")
+        for example in ds:  # example is {'image': tf.Tensor, 'label': tf.Tensor}
+            abstract = example["abstract"]
+            article = example["article"]
+            f.write('"'+bytes.decode(article.numpy()).replace('"', '\'').replace('\n', ' ') + '" ,'+'"' + bytes.decode(abstract.numpy()).replace('\n', ' ').replace('"', '\'')+'"'+ "\n")
 # Press the green button in the gutter to run the script.
+
 def main():
     #papers = build_dataset()
     #print(papers)

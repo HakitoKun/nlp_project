@@ -349,6 +349,9 @@ def main():
         if data_args.test_file is not None:
             data_files["test"] = data_args.test_file
             extension = data_args.test_file.split(".")[-1]
+
+        print("----------------------regukqazerybtfzeiuygftbzeigzeg-----")
+        print(model_args.cache_dir)
         raw_datasets = load_dataset(
             extension, data_files=data_files, cache_dir=model_args.cache_dir)
     # See more about loading any type of standard or custom dataset (from files, python dict, pandas DataFrame, etc) at

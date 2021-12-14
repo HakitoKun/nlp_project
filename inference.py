@@ -141,9 +141,27 @@ if __name__ == '__main__':
     )
     print(next(iter(eval_dataset)))
 
+    if training_args.do_predict:
+        max_target_length = data_args.val_max_target_length
+        if "test" not in raw_datasets:
+            raise ValueError("--do_predict requires a test dataset")
+        predict_dataset = raw_datasets["test"]
+        if data_args.max_predict_samples is not None:
+            predict_dataset = predict_dataset.select(
+                range(data_args.max_predict_samples))
+        with training_args.main_process_first(desc="prediction dataset map pre-processing"):
+            predict_dataset = predict_dataset.map(
+                preprocess_function,
+                batched=True,
+                num_proc=data_args.preprocessing_num_workers,
+                #remove_columns=column_names,
+                load_from_cache_file=not data_args.overwrite_cache,
+                desc="Running tokenizer on prediction dataset",
+            )
+
     #TODO rechercher ce que c est
-    label_pad_token_id = - \
-        100 if data_args.ignore_pad_token_for_loss else tokenizer.pad_token_id
+    label_pad_token_id = -100 if data_args.ignore_pad_token_for_loss else tokenizer.pad_token_id
+    print('label pad', label_pad_token_id)
     data_collator = DataCollatorForSeq2Seq(
         tokenizer,
         model=model,
@@ -166,7 +184,7 @@ if __name__ == '__main__':
     print(type(trainer))
     results = {}
     predict_results = trainer.predict(
-                eval_dataset, metric_key_prefix="predict", max_length=60, num_beams=20
+                predict_dataset, max_length=200, num_beams=20
             )
     print(predict_results, type(predict_results))
     #print(predict_results.predictions.data)
@@ -178,3 +196,5 @@ if __name__ == '__main__':
         training_args.output_dir, "generated_predictions.txt")
     with open(output_prediction_file, "w") as writer:
         writer.write("\n".join(predictions))
+
+# python3 inference.py --model_name_or_path ../tst-summarization --do_predict y --train_file out_train.csv --validation_file out_val.csv --test_file out_val.csv --output_dir /tmp/tst-summarization --overwrite_output_dir y --per_device_train_batch_size=4 --per_device_eval_batch_size=4 --predict_with_generate
