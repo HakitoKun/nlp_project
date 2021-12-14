@@ -121,13 +121,14 @@ def main(argv):
         create_balise(file)
 
     list_txt = []
+
+    n,m = 0,0
+    for file in tex_files:
+        f,n,m = my_function('test/'+file,n,m)
+
     for file in tex_files:
         list_txt.append(do_preprocessing(file))
     
-    n,m = 0,0
-    for file in tex_files:
-        f,n,m = my_function(file,n,m)
-        list_txt.append(f)
 
     for file in list_txt:
         with open(file, 'r') as f:
@@ -149,8 +150,8 @@ def main(argv):
     print("abstract : ", abstract)
     text = text.replace("\"", "'")
     abstract = abstract.replace("\"", "'")
-    with open("output.txt",'r') as f:
-        f.write("abstract, text")
+    with open("output.txt",'w+') as f:
+        f.write("abstract, text\n")
         f.write('"' + abstract + '","' + text + '"')
 
 
