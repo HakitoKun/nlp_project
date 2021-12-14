@@ -31,7 +31,7 @@ def process_url(pdf_url):
 def create_balise(file):
     pass
 
-# file_name, n : nb_départ xmath, m : nb_départ citation
+# file_name, n: nb xmath, m: nb xcite
 def my_function(file_name, n, m):
     with open(file_name, encoding='utf8') as f:
         lines = f.read()
@@ -57,7 +57,30 @@ def my_function(file_name, n, m):
 
     for i in range(len(mapping2)):
         mapping.append('@xmath' + str(i+n+len(mapping)) + ';' + mapping2[i][0])
+        
+        
     
+    lines_xcite = re.sub(r"(\\cite{.*})", '@xcite', lines)
+    splited_lines_xcite = re.split('(@xcite)', lines_xcite)
+    cpt = m
+    for i in range(len(splited_lines_xcite)):
+        if splited_lines_xcite[i] == '@xmath':
+            splited_lines_xcite[i] = splited_lines_xcite[i] + str(cpt)
+            cpt += 1
+            
+    text_modified = "".join(str(x) for x in splited_lines_xcite)
+        
+    test = re.compile('(\\cite{.*})')
+    mapping_cite = test.findall(lines)
+
+    for i in range(len(mapping_cite)):
+        mapping_cite[i] = '@xcite' + str(i+n) + ';' + mapping_cite[i]
+    
+    
+    f = open("conversion_xcite.txt", "a")
+    for i in mapping_cite:
+        f.write(i + '\n')
+    f.close()
     
     
     f = open("conversion_xmath.txt", "a")
