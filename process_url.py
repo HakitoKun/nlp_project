@@ -2,6 +2,9 @@ import tarfile
 import urllib.request as libreq
 import os, sys
 import subprocess
+from io import StringIO
+import csv
+import regex as re
 from urllib.parse import urlparse
 
 
@@ -28,6 +31,71 @@ def process_url(pdf_url):
 def create_balise(file):
     pass
 
+# file_name, n: nb xmath, m: nb xcite
+def my_function(file_name, n, m):
+    with open(file_name, encoding='utf8') as f:
+        lines = f.read()
+    lines_xmath = re.sub("\$(.*?)\$", '@xmath', lines)
+    lines_xmath = re.sub(r"(\\begin\{equation\})(.|\n)*?(\\end\{equation\})", '@xmath', lines_xmath)
+    splited_lines_xmath = re.split('(@xmath)', lines_xmath)
+    
+    cpt = n
+    for i in range(len(splited_lines_xmath)):
+        if splited_lines_xmath[i] == '@xmath':
+            splited_lines_xmath[i] = splited_lines_xmath[i] + str(cpt)
+            cpt += 1
+            
+    text_modified = "".join(str(x) for x in splited_lines_xmath)
+        
+    test = re.compile('\$(.*?)\$')
+    mapping = test.findall(lines)
+    for i in range(len(mapping)):
+        mapping[i] = '@xmath' + str(i+n) + ';' + '$' + mapping[i] + '$'
+        
+    test2 = re.compile(r"((\\begin\{equation\})(.|\n)*?(\\end\{equation\}))")
+    mapping2 = test2.findall(lines)
+
+    for i in range(len(mapping2)):
+        mapping.append('@xmath' + str(i+n+len(mapping)) + ';' + mapping2[i][0])
+        
+        
+    
+    lines_xcite = re.sub(r"(\\cite{.*})", '@xcite', lines)
+    splited_lines_xcite = re.split('(@xcite)', lines_xcite)
+    cpt = m
+    for i in range(len(splited_lines_xcite)):
+        if splited_lines_xcite[i] == '@xmath':
+            splited_lines_xcite[i] = splited_lines_xcite[i] + str(cpt)
+            cpt += 1
+            
+    text_modified = "".join(str(x) for x in splited_lines_xcite)
+        
+    test = re.compile('(\\cite{.*})')
+    mapping_cite = test.findall(lines)
+
+    for i in range(len(mapping_cite)):
+        mapping_cite[i] = '@xcite' + str(i+n) + ';' + mapping_cite[i]
+    
+    
+    f = open("conversion_xcite.txt", "a")
+    for i in mapping_cite:
+        f.write(i + '\n')
+    f.close()
+    
+    
+    f = open("conversion_xmath.txt", "a")
+    for i in mapping :
+        f.write(i + '\n')
+    f.close()
+    
+    f = open("toto", "w")
+    f.write(text_modified)
+    f.close()
+    
+
+    nb_xmath = n
+    nb_citation = m
+    return file_name, nb_xmath, nb_citation
 
 def main(argv):
     pdf_url = argv[0]
@@ -53,8 +121,14 @@ def main(argv):
         create_balise(file)
 
     list_txt = []
+
+    n,m = 0,0
+    for file in tex_files:
+        f,n,m = my_function('test/'+file,n,m)
+
     for file in tex_files:
         list_txt.append(do_preprocessing(file))
+    
 
     for file in list_txt:
         with open(file, 'r') as f:
@@ -76,8 +150,8 @@ def main(argv):
     print("abstract : ", abstract)
     text = text.replace("\"", "'")
     abstract = abstract.replace("\"", "'")
-    with open("output.txt",'r') as f:
-        f.write("abstract, text")
+    with open("output.txt",'w+') as f:
+        f.write("abstract, text\n")
         f.write('"' + abstract + '","' + text + '"')
 
 
