@@ -2,6 +2,9 @@ import tarfile
 import urllib.request as libreq
 import os, sys
 import subprocess
+from io import StringIO
+import csv
+import regex as re
 from urllib.parse import urlparse
 
 
@@ -28,6 +31,48 @@ def process_url(pdf_url):
 def create_balise(file):
     pass
 
+# file_name, n : nb_départ xmath, m : nb_départ citation
+def my_function(file_name, n, m):
+    with open(file_name, encoding='utf8') as f:
+        lines = f.read()
+    lines_xmath = re.sub("\$(.*?)\$", '@xmath', lines)
+    lines_xmath = re.sub(r"(\\begin\{equation\})(.|\n)*?(\\end\{equation\})", '@xmath', lines_xmath)
+    splited_lines_xmath = re.split('(@xmath)', lines_xmath)
+    
+    cpt = n
+    for i in range(len(splited_lines_xmath)):
+        if splited_lines_xmath[i] == '@xmath':
+            splited_lines_xmath[i] = splited_lines_xmath[i] + str(cpt)
+            cpt += 1
+            
+    text_modified = "".join(str(x) for x in splited_lines_xmath)
+        
+    test = re.compile('\$(.*?)\$')
+    mapping = test.findall(lines)
+    for i in range(len(mapping)):
+        mapping[i] = '@xmath' + str(i+n) + ';' + '$' + mapping[i] + '$'
+        
+    test2 = re.compile(r"((\\begin\{equation\})(.|\n)*?(\\end\{equation\}))")
+    mapping2 = test2.findall(lines)
+
+    for i in range(len(mapping2)):
+        mapping.append('@xmath' + str(i+n+len(mapping)) + ';' + mapping2[i][0])
+    
+    
+    
+    f = open("conversion_xmath.txt", "a")
+    for i in mapping :
+        f.write(i + '\n')
+    f.close()
+    
+    f = open("toto", "w")
+    f.write(text_modified)
+    f.close()
+    
+
+    nb_xmath = n
+    nb_citation = m
+    return file_name, nb_xmath, nb_citation
 
 def main(argv):
     pdf_url = argv[0]
@@ -55,6 +100,11 @@ def main(argv):
     list_txt = []
     for file in tex_files:
         list_txt.append(do_preprocessing(file))
+    
+    n,m = 0,0
+    for file in tex_files:
+        f,n,m = my_function(file,n,m)
+        list_txt.append(f)
 
     for file in list_txt:
         with open(file, 'r') as f:
