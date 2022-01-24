@@ -1,0 +1,32 @@
+@xcite0;cite{robust_design_overview}
+@xcite1;cite{prin_robust_design}
+@xcite2;cite{experiment_complex}
+@xcite3;cite{tandem}
+@xcite4;cite{normalizing_flow_review}
+@xcite0;cite{benchmark_2020}
+@xcite1;cite{robust_design_overview}
+@xcite2;cite{prml}
+@xcite3;cite{noise2noise}
+@xcite4;cite{tandem}
+@xcite5;cite{real_nvp, glow_inn}
+@xcite6;cite{normalizing_flow_review}
+@xcite7;cite{gan}
+@xcite8;cite{vae}
+@xcite9;cite{robust_baysian_inference_wl, wl_intro}
+@xcite10;cite{local_likelihood}
+@xcite0;cite{cvae}
+@xcite1;cite{benchmark_2018}
+@xcite2;cite{real_nvp, glow_inn}
+@xcite3;cite{benchmark_2020}
+@xcite4;cite{gan, cgan}
+@xcite5;cite{tandem}
+@xcite6;cite{analyzing_inverse_problem}
+@xcite7;cite{benchmark_2018}
+@xcite8;cite{benchmark_2020}
+@xcite0;cite{taguchi_robust_engineering}
+@xcite1;cite{taguchi}
+@xcite2;cite{experiment_complex}
+@xcite3;cite{robust_optimization}
+@xcite4;cite{ml_spotlight,inverse_design_chem_rl,mm_nature_photonics}
+@xcite5;cite{deep_neural_network_nature,robust_design_icml}
+@xcite6;cite{benchmark_2018,tandem,na_journal,deep_inverse_design_nano}

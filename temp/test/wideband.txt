@@ -1,0 +1,195 @@
+ABSTRACT
+
+High-precision measurements of the pulsar dispersion measure (DM) are possible using telescopes with low-frequency wideband receivers. We present an initial study of the application of the wideband timing technique, which can simultaneously measure the pulsar times of arrival (ToAs) and DMs, for a set of five pulsars observed with the upgraded Giant Metrewave Radio Telescope (uGMRT) as part of the Indian Pulsar Timing Array (InPTA) campaign. We have used the observations with the 300 – 500 MHz band of the uGMRT for this purpose. We obtain high precision in DM measurements with precisions of the order 10⁻⁶ cm⁻³ pc. The ToAs obtained have sub-μs precision and the root-mean-square of the post-fit ToA residuals are in the sub-μs range. We find that the uncertainties in the DMs and ToAs obtained with this wideband technique, applied to low-frequency data, are consistent with the results obtained with traditional pulsar timing techniques and comparable to high-frequency results from other PTAs. This work opens up an interesting possibility of using low-frequency wideband observations for precision pulsar timing and gravitational wave detection with similar precision as high-frequency observations used conventionally.
+
+BODY
+
+[firstpage]
+
+stars: pulsars: InPTA: gravitational waves
+
+Introduction
+
+Pulsars are rotating neutron stars, which emit pulsed radiation, observed mainly in radio wavelengths. This radiation traverses the interstellar medium (ISM), where it gets dispersed due to the presence of free electrons, causing a delay in the times of arrival (ToAs) of pulses as a function of frequency . This dispersion delay is characterized by the dispersion measure (DM), which is proportional to the cumulative column density of free electrons in the interstellar medium. One can get precise measurements of the DM by measuring the pulse ToAs simultaneously at different frequencies.
+
+The increasing availability of wideband receivers and backends presents new opportunities for high precision timing with wideband timing (WT) techniques . Such high precision measurements are very important for pulsar timing arrays , such as the Parkes Pulsar Timing Array , the European Pulsar Timing Array , the North American Nanohertz Observatory for Gravitational Waves , the Indian Pulsar Timing Array and the International Pulsar Timing Array (IPTA) consortium, which combines the data and resources from various PTA experiments in order to search for nanohertz gravitational waves (GWs). Such a technique not only provides high precision ToAs, but also yields simultaneous estimates of the DM variations for the millisecond pulsars (MSPs) being timed. The wideband technique has been applied to datasets such as the NANOGrav 12.5-year dataset . In this work, we describe the application of this technique to low frequency (below 400 MHz) observations for the first time, which is complementary to the recent application in the 400-800 MHz frequency range using data from CHIME and GBT-L .
+
+Pulsars are bright at frequencies below 1 GHz. The higher signal to noise ratio (S/N) of MSPs at these frequencies could potentially yield higher precision ToAs. However, the electron distribution in the ISM has a dominant effect on the pulse shape and arrival time of the pulsed signal from these stars at such low frequencies . Scattering due to the ISM not only broadens the pulsed signal, but also delays the pulse by a factor roughly proportionate to its width, leading to inaccurate timing measurements . Additionally, the time variability of the DM due to the dynamic nature of the ISM introduces a correlated noise in the GW analysis. This ISM noise is slowly varying and is covariant with the signature of the stochastic gravitational wave background (SGWB), formed by an incoherent superposition of GWs coming from an ensemble of supermassive black hole binaries . As the magnitude of this noise is much larger at low frequencies, PTAs have conventionally used higher frequency observations for the search of nanohertz GWs, despite a higher S/N at low radio frequencies.
+
+As the ISM noise affects higher frequency observations as well, PTA experiments typically correct high frequency ToAs using DM estimates obtained from quasi-simultaneous narrow band observations at two or three widely separated observing frequencies . The alignment of the fiducial point of the pulse at different observing frequencies is critical in such measurements. This can introduce a systematic bias in the measured DMs as well as in other pulsar timing parameters . Furthermore, extreme scattering events , DM events , and profile changes have been reported in some of the pulsars, such as PSR J1713+0747, which complicate the GW analysis of the PTA data.
+
+Alternatively, wideband receivers have been employed between 700 − 4000 MHz by PPTA for higher precision DM measurements. Application of wideband techniques to such data provide a robust way to correct the profile evolution with frequency as well as ISM noise, including the corruption of data by abrupt ISM events. However, the dispersive delay due to the ISM varies as ν⁻², whereas the pulse scatter broadening evolves as ν^(−4.4), if a Kolmogorov turbulence is posited for the ISM . While this strong frequency dependence is challenging for low frequency PTA observations, application of the wideband techniques to observations between 300 − 800 MHz can, in principle, better account for these effects and can provide very precise ToAs. Thus, the application of this technique to frequencies between 300 to 800 MHz promise to make low radio frequency PTA observations as useful as high frequency observations.
+
+InPTA uses wideband coherently dedispersed observations with the 300 − 500 MHz band of the upgraded GMRT . In this paper, we provide a proof of principle application of wideband timing technique PulsePortraiture [2] to such observations for five pulsars. This complements the DM measurements by both the methods reported in   computed using the DMcalc package. This paper is structured as follows. InPTA observations used in this paper are briefly described in Section 2 and a description of analysis of these data using PulsePortraiture, in Section 3. The results obtained using this method for five pulsars are presented in Section 4. The paper concludes with a discussion in Section 5.
+
+Observations and data reduction
+
+The InPTA collaboration has been monitoring five pulsars (PSRs J1643−1224, J1713+0747, J1909−3744, J1939+2134, and J2145−0750) since 2018 with a cadence of around 15 days, using the uGMRT. These observations were carried out by dividing uGMRT’s 30 antennas into two sub-arrays. These pulsars are observed in Band 3 (300-500 MHz) and Band 5 (1060-1460 MHz) simultaneously using separate sub-arrays. The nearest 10 central square antennas were included in the Band 3 sub-array, where the data were coherently dedispersed in real-time and recorded using the GMRT Wideband Backend with a 200 MHz band-pass. The number of sub-bands for the recording vary between 64 to 1024 with the sampling time used ranging from 5 to 40 μs, respectively. The observation time per pulsar is typically about 55 minutes.
+
+The recorded data were reduced offline using an automated data reduction pipeline pinta , developed for the InPTA data. Using the known pulsar ephemeris , this pipeline partially folds the data from all the sub-bands into sub-integrations of 10-second duration to archive files in the TIMER format . Radio-frequency interference mitigation was performed by RFIClean . Before our analysis, all the reduced data were further collapsed in time to a single integration, with 64 sub-bands. In this work, we report the results for the aforementioned five pulsars observed in Cycle 39 of uGMRT covering the period between November 2020 to April 2021. Since our goal is to demonstrate the application of WT at low frequencies, only Band 3 data were used for the work presented here. The selection of these pulsars was made based on the different pulse morphology and a range of observed scatter-broadening in the pulse profiles. PSR J1909–3744 shows systematic changes in DM but also has the best achievable timing solution. PSRs J1643–1224 and J1939+2134 show large systematics due to a variation in the pulse scatter broadening. PSRs J1713+0747 and J2145–0750 are bright pulsars in our sample, which also show scatter broadening, profile evolution, and scintillation in our frequency range apart from epoch to epoch DM variations. Amongst these pulsars, J1909–3744 and J2145–0750 are the best timed pulsars. This diversity of frequency dependent effects in this sample of pulsars is useful to evaluate the efficacy and the systematic errors in the wideband technique. However, in future, we shall apply this technique to all the pulsars observed by InPTA, using the full observational data.
+
+Wideband analysis
+
+We now provide some technical details of the methodology used in the PulsePortraiture package, which is the workhorse behind the WT analysis used in this work. More details can be found in  . The wideband data processing can be divided into three stages using the following modules: ppalign, ppspline, and pptoas. We now describe each of these modules below.
+
+-   ppalign: The first step in PulsePortraiture involves creating a two-dimensional template, containing the pulse amplitude as a function of the frequency and phase. This step is done in the ppalign module. Each phase-frequency sub-integration in the data set is called a data “portrait”. The starting point in constructing this portrait is nearly the same as in the traditional analysis, which consists of an iterative procedure of co-adding all the significant total intensity profiles at all frequencies in a given band . The only difference is that instead of aligning each data portrait compared to a constant profile portrait using only a phase shift, each profile is rotated by a factor proportional to the inverse-square of its frequency. By doing so, we can minimize the dispersive delays caused by DM changes, which could smear the average portrait. This iterative process is carried out multiple times to create a final average portrait. Regardless of averaging, the choice of alignment will be covariant with the absolute DM. In our analysis, we used a single epoch data to construct the portrait since the signal to noise ratio was reasonably high.
+
+-   ppspline: This module does the principal component analysis (PCA) decomposition of the average portrait, followed by reconstruction of the template profile based on the significant eigenvectors. We apply PCA to the average portrait profiles, whose dimensions are n_(chan) × n_(bin), where n_(chan) are the total number of frequency bins and n_(bin) are the total number of phase bins, which encompass the observed bandwidth and pulsar profile, respectively. Unlike conventional PCA, we do not select the optimum basis vectors (here referred to as eigenprofiles) based on the largest eigenvalues, in order to avoid getting contaminated by radiometer noise. Instead, we choose the top 10 eigenprofiles ranked according to their S/N. In order to determine the S/N, the mean profile as well as the eigenprofiles were first smoothened using Stationary Wavelet Transform based denoising, and the S/N was then calculated using the definition in .
+
+    The mean-subtracted profiles are projected onto each of the eigenprofiles to obtain a set of coordinate coefficients. A low-degree spline function is fitted to these coefficients, which is parameterized by frequency and encompasses the evolution of the pulse profile shape. By linearly combining the eigenprofiles e_(i) using the spline coefficients B_(i) and adding it to the mean profile p̃, a template profile T(ν) at any frequency ν can be created as follows:
+
+    $$T(\nu) = \sum_{i=1}^{n_{eig}} B_i(\nu) \hat{e_i} + \tilde{p}$$
+
+-   pptoa: In this step, the DMs and ToAs are calculated. The ToA and DM pair from each observation are obtained by minimizing the χ² value as follows ,
+    $$\label{eqn:wb_toa}
+    \chi^2 = \sum_{n,k} \frac{|d_{nk} - a_n t_{nk}e^{-2\pi i k \phi_n}|^2}{\sigma_n^2}.$$
+    Equation [eqn:wb_toa] takes the same form as the conventional ToA likelihood used in the Fourier-domain phase-gradient shift algorithm , except here there is an additional index n, which labels the frequency channel with center frequency ν_(n). k is the index corresponding to the Fourier frequency, which is conjugate to the rotational phase or time. The other terms in the equation are as follows: d_(nk) is the discrete Fourier transform of the data profiles, σ_(n)² are their corresponding Fourier domain noise levels, t_(nk) is the discrete Fourier transform of the template profiles, a_(n) are the scaling amplitudes for each template profile, and ϕ_(n) are the phase shifts applied to each template profile. The two fitted parameters of interest, ϕ₀ (which corresponds to the ToA) and the DM, arise because the phase offsets ϕ_(n) for each profile are constrained to follow the cold-plasma dispersion law:
+    $$\phi_n(\nu_n) = \phi_0 + \frac{K \times DM}{P_s} (\nu_n^{-2}-\nu_{\phi_0}^{-2}),$$
+    where P_(s) is the instantaneous spin period of the pulsar, K is the dispersion constant (4.148808× 10³ MHz² cm³ pc⁻¹s). The ToAs and DMs are simultaneously fit for in such a way that there is zero covariance between them. The ToAs and DMs are then written to a file.
+
+A likelihood that is implemented in the pulsar timing software package TEMPO effectively uses the wideband DM measurements from the ToAs as priors on the DM model parameters. Details of this procedure can be found in Appendix B of . Therefore, the wideband analysis of InPTA data simultaneously yields a DM timeseries as well as the residuals with respect to the fitted ephemeris. These are shown in Figures [fig:DM] and [fig:res]. The spin parameters, F₀ and F₁, and the orbital Keplerian parameters, namely the orbital period (P_(b)), the projected pulsar semi-major axis (a_(p)sin i), longitude and the epoch of periastron passage (ω, T₀) are fitted. As we do not expect to improve the positional parameters of the pulsar over the six-month time-span of our data, these are not fitted. We also did not fit the solar wind model. The TDB coordinates with DE436 ephemeris are used throughout the analysis. The parameter files used in this analysis are taken from the NANOGrav 12.5-year data release . The results of these analyses are presented in the next section.
+
+[image]
+
+[image]
+
+[image]
+
+[image]
+
+Analysis and Results
+
+The main goal of this work is to measure the wideband ToAs and DMs for the low-frequency pulsar data in order to study its suitability for PTA experiments. We applied this technique to a sample of five pulsars, which were observed by InPTA, and obtained DM estimates as well as timing residuals.
+
+In a nutshell, Figure [fig:DM] displays the DM estimations from WT and a comparison to DM values obtained using DMcalc . The WT DM estimates obtained by measuring each WT ToA are plotted here. Figure [fig:res] demonstrates the WT ToAs with a precision of less than 1 μs and rms post-fit residuals of 1 μs or better. The eigenprofiles corresponding to the PCA decomposition of the PSR J1939+2134 data are shown in Figure [fig:pca]. The DM uncertainties obtained using WT and DMcalc methods are compared in Figure [fig:uncert]. Table [tab:obs] summarises the results of WT method, whereas Table [tab:par] compares the WT and narrow-band timing (NT) solutions.
+
+The DM estimations were done by independent WT analyses with varying the number of eigenprofiles, the number of bins, as well as the epoch data used to make the average portrait, to understand their effect on the results. We draw the following conclusions based on these tests:
+
+1.  In Figure [fig:pca] (left panel), we show how the DM estimates correlate with the number of eigenprofiles for PSR J1939+2134. With one and two eigenprofiles, the DM value is underestimated. The first two eigenprofiles span only about 94% of the profile evolution. The first, second, and third eigenprofiles together span about 99% of the profile evolution. When the number of eigenprofiles is three or above, the DM values are consistent within the error bars. On the right panel, the mean profile and eigenprofiles corresponding to the PCA decomposition of PSR J1939+2134 data are plotted for visual reference. The grey points are the computed values from the data and the dark lines are the smoothed curves that comprise the model. Based on similar analysis, the optimum number of eigenprofiles, required for accurate DM estimations for the five pulsars in our sample, are as follows: For PSRs J1643−1224, J1713+0747, and J1939+2134 the DM estimates with n_(eig) = 3 or more are consistent with each other. Therefore, DM estimation can be done with a minimum of three eigenprofiles. For J1909−3744 and J2145−0750, the DM estimates with n_(eig) = 2 or more are consistent within the error bars. Therefore, for these pulsars a minimum of 2 eigenprofiles are required.
+
+2.  The DM uncertainties are smaller with larger number of bins, compared to those with smaller number of bins. This is consistent across all the five pulsars in our sample.
+
+3.  The DM estimates obtained using the different averaged portraits have an offset among them. However, the median subtracted DMs are consistent with each other within the error bars. This is consistent across all the five pulsars in our sample.
+
+For our WT analysis, we reduced the data to 64 channels, and one sub-integration for all the pulsars in our sample. PSRs J1643–1224, J1713+0747, and J1909–3744, data have 256 bins; J1939+2134 data have 128 bins; and J2145–0750 data have 1024 bins. The WT results for all the pulsars are summarized in Table [tab:obs].
+
+Conventional NT ToAs and DM estimation were performed with 4 subbands for J1643–1224, and 16 subbands for J1713+0747, J1909–3744, J1939+2134 and J2145–0750. Frequency-resolved templates were created for each pulsar using a wavelet smoothing algorithm , implemented as the psrsmooth command in PSRCHIVE , on the same epoch data with the same number of bins as used for the wideband templates. These templates were aligned using the same fiducial DMs as the ones used to align the wideband templates. The ToAs were computed from the frequency-resolved profiles using the Fourier Phase Gradient algorithm available in the pat command of PSRCHIVE. The resulting ToAs were then fitted for the DM, spin-down parameters F0 and F1, and the binary parameters PB, A1 and T0/TASC (where applicable) using TEMPO2. In addition, the epoch-by-epoch DM variations were modeled by fitting for the ‘DMX’ parameters in the pulsar ephemeris. DMX is a piecewise-constant representation of the DM variability that is included in the timing model. A separate DM is estimated for each DMX epoch range based on the ν⁻² dependence of the ToAs that fall within that epoch range. These DMX model parameters are fitted simultaneously together with the rest of the timing model free parameters. Note that we do not fit for the overall DM simultaneously with the DMX parameters as they are covariant with each other.
+
+To compare and contrast the results from WT, we also used DMcalc to obtain the DMs at each epoch. DMcalc is a script written to automate many of the steps in obtaining DM from each epoch using the PSRCHIVE Python interface and TEMPO2. In this method, we use a high S/N, frequency resolved template to obtain the ToAs and estimate DM using them for every epoch. Huber regression is used to remove the large outlier ToAs before estimating the DM using TEMPO2. We made a high S/N template for each pulsar by using the psrsmooth program of PSRCHIVE. Similar to WT, the data from the same epoch and same channel resolution (64 channels) are used. The data of each of these pulsars are passed through DMcalc along with the above created high S/N templates and the parameter files as used in WT method (without the DMX values and after updating the DM value to the one with which the template is aligned). The DM timeseries of each of the epochs is obtained.
+
+The DM estimates from WT, NT, and DMcalc have offsets among them. J1939+2134 has the smallest difference in median DMs, which is 2.7×10⁻⁵ cm⁻³pc, between WT and DMcalc. The maximum offset is seen for J1643–1224, which is 1.4×10⁻² cm⁻³pc, between WT and DMcalc.
+
+We now check how the DM estimates from WT compare with the DM estimates derived from the recently published DMcalc method. To establish a correlation (if any) between the general trends in DMcalc DM estimates and WT DM estimates, we performed a Spearman’s rank correlation test . The correlation coefficients and p−values for each pulsar are listed in Table [tab:obs]. The p-values are computed assuming that the null hypothesis corresponds to no correlation between the pair of datasets. Since the p−values are  < 10⁻², it implies that the DM values between the two measurements are correlated. In Figure [fig:DM], the median subtracted DM timeseries for WT and DMcalc for the five pulsars are shown. It can be seen that the DM precision obtained, in general, is about 𝒪(10⁻⁴) cm⁻³pc or better. The timing residuals after fitting the selected parameters for each of the pulsars are shown in Figure [fig:res]. The results of the ephemeris fit and comparison between WT and NT methods are consolidated in Table [tab:par].
+
+A comparison of the results for each of the pulsars is summarized below.
+
+PSR J1643–1224
+
+For this pulsar, the median DM estimate from the WT analysis is 62.40859 cm⁻³ pc. The DMcalc median DM estimate is 62.39397 cm⁻³ pc. The DM measurements obtained with these two methods are correlated with a correlation coefficient of 0.67 and p-value of 1 × 10⁻². The median S/N of this pulsar is 343.
+
+The median ToA uncertainty from WT is 0.66 μs with a postfit rms of about 0.53 μs. In comparison, NG reports a median ToA uncertainty of 0.46 μs at 1.4 GHz. Our precision is just a factor of 1.5 lower than NG.
+
+PSR J1713+0747
+
+For this pulsar, the median DM estimate from WT analysis is 15.98957 cm⁻³ pc. The median DM estimate from DMcalc is 15.99003 cm⁻³ pc. The DM measurements obtained with these two methods are correlated with a correlation coefficient of 0.58 and p-value of 2 × 10⁻². The median S/N of this pulsar is 178, which is the least in our sample.
+
+The median ToA uncertainty from WT is 0.50 μs with a postfit rms of about 0.13 μs. In contrast, NG reports a median ToA uncertainty of 0.043 μs at 1.4 GHz. Our precision is a factor of 12 lower than NG.
+
+PSR J1909–3744
+
+For this pulsar, the median DM estimate from WT analysis is 10.39113 cm⁻³ pc. The median DM estimate from DMcalc is 10.39085 cm⁻³ pc. The DM measurements obtained with these two methods are highly correlated with a correlation coefficient of 0.84 and p-value of 8 × 10⁻⁵. The median S/N for this pulsar is 261. This pulsar has a sharp pulse profile with no scatter broadening.
+
+The median ToA uncertainty from WT is 0.13 μs with a postfit rms of about 0.07 μs. In contrast, NG reports a median ToA uncertainty of 0.086 μs at 1.4 GHz. Our precision is just a factor of 1.5 lower than NG.
+
+PSR J1939+2134
+
+For this pulsar, the median DM estimate from WT analysis is 71.017317 cm⁻³ pc. The median DM estimate from DMcalc of 71.017344 cm⁻³ pc. The DM measurements obtained with these two methods are highly correlated with a correlation coefficient of 0.92 and p-value of 4 × 10⁻⁵. The median S/N for this pulsar is 1175, which is the best in our sample.
+
+The median ToA uncertainty from WT is 0.02 μs with a postfit rms of about 0.04 μs. In contrast, NG reports a median ToA uncertainty of 0.01 μs at 1.4 GHz. Our precision is a factor of 2 lower than NG.
+
+PSR J2145–0750
+
+For this pulsar, the median DM estimate from WT analysis is 8.99820 cm⁻³ pc. The median DM estimate from DMcalc is 9.00315 cm⁻³ pc. The DM measurements obtained with these two methods are highly correlated with a correlation coefficient of 0.82 and p-value of 2 × 10⁻⁴. The median S/N for this pulsar is 851.
+
+The median ToA uncertainty from WT is 0.26 μs with a postfit rms of about 0.20 μs. In comparison, NG reports a median ToA uncertainty of 0.48 μs at 1.4 GHz. Our precision is a factor of 1.8 better than NG.
+
+width=17cm
+
+  ------------ ------------- --------- ----------- ------------------ ------------------ ------------------ ----------
+      PSR           ToA       Postfit    Median            DM              Best DM             DMcalc        p-value
+                uncertainty     rms        DM          precision          precision       PulsePortraiture  
+                   (μs)        (μs)     (cm⁻³ pc)   ( × 10⁻⁴cm⁻³ pc)   ( × 10⁻⁵cm⁻³ pc)       Spearman      
+                                                                                          Coefficient (ρ)   
+   J1643-1224      0.66        0.53     62.40859          1.1                9.4                0.67         1 × 10⁻²
+   J1713+0747      0.50        0.13     15.98957          0.9                4.9                0.58         2 × 10⁻²
+   J1909-3744      0.13        0.07     10.39113          0.2                1.2                0.84         8 × 10⁻⁵
+   J1939+2134      0.02        0.04     71.017317         0.03               0.2                0.92         4 × 10⁻⁵
+   J2145-0750      0.26        0.20      8.99820          0.3                1.8                0.82         2 × 10⁻⁴
+  ------------ ------------- --------- ----------- ------------------ ------------------ ------------------ ----------
+
+  Parameters            WT              WTU              NT              NTU             NT–WT         (NT–WT)/NTU       WTU/NTU
+  -------------- ----------------- -------------- ----------------- -------------- ----------------- --------------- ---------------
+  J1643–1224                                                                                          dimensionless   dimensionless
+  F_{0} (Hz)      216.3733404539    3.35 × 10⁻¹⁰   216.3733404535    1.32 × 10⁻⁹     − 4.14 × 10⁻¹⁰       0.315           0.255
+  A_1 (ls)           25.072541      5.32 × 10⁻⁶       25.072556      2.07 × 10⁻⁵      1.54 × 10⁻⁵         0.748           0.258
+  P_b (d)            147.01721      2.68 × 10⁻⁵       147.01726      1.03 × 10⁻⁴      5.37 × 10⁻⁵         0.521           0.260
+  Reduced χ²           30.5                                                                                          
+  Dof                    6                                                                                           
+  J1713+0747                                                                                                         
+  F_{0} (Hz)       218.811843783    6.60 × 10⁻⁹     218.811843781    8.02 × 10⁻⁹     − 2.78 × 10⁻⁹        0.347           0.824
+  F_{1} (Hz/s)     − 3.98 × 10⁻¹⁶   2.14 × 10⁻¹⁷    − 3.89 × 10⁻¹⁶   2.60 × 10⁻¹⁷    9.16 × 10⁻¹⁸         0.353           0.823
+  A_1 (ls)          32.3424241      9.42 × 10⁻⁷      32.3424270      1.11 × 10⁻⁶      2.90 × 10⁻⁶         2.622           0.852
+  P_b (d)           67.8251289      5.42 × 10⁻⁷      67.8251293      5.72 × 10⁻⁷      3.84 × 10⁻⁷         0.672           0.948
+  Reduced χ²            2.2                                                                                          
+  Dof                    9                                                                                           
+  J1909−3744                                                                                                         
+  F_{0} (Hz)       339.315692408    2.38 × 10⁻⁹     339.315692396    4.52 × 10⁻⁹     − 1.16 × 10⁻⁸        2.565           0.526
+  F_{1} (Hz/s)     − 1.66 × 10⁻¹⁵   7.62 × 10⁻¹⁸    − 1.62 × 10⁻¹⁵   1.45 × 10⁻¹⁷    3.69 × 10⁻¹⁷         2.550           0.526
+  A_1 (ls)           1.8979913      2.67 × 10⁻⁷       1.8979907      5.20 × 10⁻⁷     − 6.13 × 10⁻⁷        1.179           0.513
+  P_b (d)           1.533449455     1.09 × 10⁻⁹      1.533449442     1.92 × 10⁻⁹     − 1.30 × 10⁻⁸        6.765           0.571
+  Reduced χ²           8.37                                                                                          
+  Dof                    9                                                                                           
+  J1939+2134                                                                                                         
+  F_{0} (Hz)      641.9282322513    8.48 × 10⁻¹⁰   641.9282322461    9.85 × 10⁻⁹     − 5.25 × 10⁻⁹        0.533           0.086
+  F_{1} (Hz/s)     − 4.32 × 10⁻¹⁴   2.96 × 10⁻¹⁸    − 4.32 × 10⁻¹⁴   3.13 × 10⁻¹⁷    1.60 × 10⁻¹⁷         0.513           0.086
+  Reduced χ²          192.78                                                                                         
+  Dof                    9                                                                                           
+  J2145−0750                                                                                                         
+  F_{0} (Hz)       62.2958888039    9.37 × 10⁻¹⁰    62.2958887957    3.14 × 10⁻⁹     − 8.24 × 10⁻⁹        2.626           0.299
+  F_{1} (Hz/s)     − 1.37 × 10⁻¹⁶   2.99 × 10⁻¹⁸    − 1.10 × 10⁻¹⁶   9.99 × 10⁻¹⁸    2.62 × 10⁻¹⁷         2.624           0.299
+  A_1 (ls)          10.1641104      5.36 × 10⁻⁷      10.1641082      1.72 × 10⁻⁶     − 2.13 × 10⁻⁶        1.241           0.312
+  P_b (d)           6.838902542     6.92 × 10⁻⁹      6.838902502     2.26 × 10⁻⁸     − 4.04 × 10⁻⁸        1.784           0.306
+  Reduced χ²           19.07                                                                                         
+  Dof                   10                                                                                           
+
+Conclusions and Discussions
+
+In this work, we have demonstrated the application of wideband timing using PulsePortraiture on low-frequency (300–500 MHz) data for five millisecond pulsars: PSRs J1643–1224, J1713+0747, J1909–3744, J1939+2134, and J2145–0750, observed at uGMRT as part of the InPTA program. These pulsars show different morphologies in pulse shapes and varying degrees of broadening in their pulse profiles. DM estimates with this technique are consistent with techniques, such as DMcalc , which use data with narrow sub-bands. At the same time, this technique simultaneously provides high precision ToAs. PCA analysis, employed for this technique, indicates that we require a minimum of three eigenprofiles for PSRs J1643−1224, J1713+0747, and J1939+2134; and two eigenprofiles for PSRs J1909−3744 and J2145−0750 to capture the profile evolution with frequency. We obtained DM precision ranging between 3 × 10⁻⁶  cm⁻³pc for PSR J1939+2134 to 1 × 10⁻⁴  cm⁻³pc for PSR J1643–1224. Using this method, we get sub-microsecond post-fit average residuals. We achieved the best post-fit residuals of about 40 ns for PSR J1939+2134.
+
+Using the dispersion formula
+$$\Delta t = 4.148808 \text{ ms} \times \bigg[ \bigg(\frac{f_{lo}}{\text{GHz}}\bigg)^{-2} - \bigg(\frac{f_{hi}}{\text{GHz}}\bigg)^{-2}\bigg] \times \bigg(\frac{DM}{\text{cm}^{-3}\text{pc}}\bigg),$$
+, it can be shown that the precision in DM measurements obtained over our 200 MHz bandwidth (e.g., 300−500 MHz) 𝒪(10⁻⁵) is at least an order of magnitude better than that over a wide high frequency band (e.g., 700−4000 MHz) 𝒪(10⁻⁴)  cm⁻³pc (for assumed typical 1 μs ToA errors). These 300−500 MHz observations provide a S/N comparable to GHz bandwidth observations at high frequencies as pulsars are much brighter at 400 MHz. In addition, our results show that the application of WT to our band can provide post-fit residuals comparable to high frequency data by taking care of ISM effects considerably. Thus, WT of such low frequency observations is capable of not only providing more accurate DM estimates, but also high precision ToAs directly. It will be interesting to make a direct comparison between the analysis of low and high frequency PTA data in a future IPTA data combination to investigate this further.
+
+We compare these low-frequency ToA residuals and DM uncertainties with the results published in the literature for the same pulsars, both at low and high frequencies . In the low frequency band, our DM estimates show a strong correlation with the results from DMcalc. Now, WT technique has considerable advantages over the traditional timing techniques. Firstly, WT is more amenable to automation with a one-step analysis. In contrast, analysis methods using sub-bands, such as traditional narrow-band analysis or DMcalc, require a multi-step iterative approach with DM estimation followed by timing in an iterative loop. Secondly, traditional analysis either ignores profile evolution or pulse broadening or at best approximates it. In contrast, WT incorporates this as an essential ingredient of analysis. In Figure [fig:uncert], we compare the uncertainties from both the methods for these five pulsars. With the exception of PSR J1643-1224 and PSR J1939+2134, the uncertainty from both the methods are consistent. The inconsistency could be related to the fact that we only considered profile evolution and not scattering effects and these pulsars show significant pulse broadening at low frequencies. We plan to investigate this further in a future work. Lastly, the WT technique utilizes the S/N of the entire wideband observations to provide high precision ToA unlike the narrow-band technique. This also results in a single high S/N band- averaged ToA rather than 16 to 32 lower S/N ToAs. This significantly reduces the dimensionality of subsequent Bayesian analysis, which is employed for detection of GWs. Thus, the consistency of the DM estimates between the WT and traditional methods provides support for a preferential use of WT technique at low frequencies, in particular, and hint at an increasing reliance on WT technique for future PTA and IPTA data release, in general.
+
+A comparison of the timing solutions obtained from WT and traditional NT are presented in Table [tab:par]. As is evident from the table, WT produces timing solutions consistent with NT, with typical uncertainties in fitted parameters smaller than NT.
+
+In our application, the pulse broadening was assumed to be stable over the observation epochs. This may not be the case for all the pulsars. An example is PSR J1643−1224, where variable pulse broadening at a given frequency was reported earlier . Epoch to epoch variation of the profile evolution with frequency has also been reported in PSR J1713+0747 . An extension of WT to include such a variation will be interesting and is planned in future. Similar extension to combine widely separated multiple bands is also planned in future.
+
+A comparison with the median ToA uncertainties at high frequencies, such as those obtained by NG at 1.4 GHz, indicates that our ToA uncertainties are of the same order (1.5 to 2 times), except for one pulsar (PSR J1713+0747). These findings suggest that low frequency data, analysed with WT technique, can provide a precision similar to high frequency data for gravitational wave detection experiments. Given the steep spectrum of radio pulsars, this not only enables high precision measurements with smaller observation duration per pulsar at low frequency (as pulsars are much brighter at these frequencies), but also a higher cadence than currently employed with the same telescope time. Additionally, several weaker MSPs can be included in the PTA ensemble. Not only this can provide a more uniform sky coverage for useful sampling of the Hellings and Downs overlap reduction function , but also significantly increase the sensitivity to the stochastic gravitational wave background. Thus, our results suggest that wideband low frequency observations can play at least an equal, if not better role, in PTA experiments.
+
+With the Square Kilometer Array telescope becoming available in the near future, wideband observations with SKA-low (200−350 MHz) and SKA-mid (350−1000 MHz) promise to provide high quality data not only for nanoHertz gravitational wave discovery, but also for post discovery gravitational wave science. Wideband techniques are likely to play a very important role in analysis of these data from SKA.
+
+Software: matplotlib , PSRCHIVE , PulsePortraiture , TEMPO , TEMPO2 , DMcalc , RFIClean , pinta
+
+Facility: uGMRT.
+
+Acknowledgements
+
+This work is carried out by InPTA, which is part of the International Pulsar Timing Array consortium. We thank the staff of the GMRT who made our observations possible. GMRT is run by the National Centre for Radio Astrophysics of the Tata Institute of Fundamental Research. BCJ, PR, AS, SD, LD, and YG acknowledge the support of the Department of Atomic Energy, Government of India, under project identification # RTI4002. BCJ and YG acknowledge support from the Department of Atomic Energy, Government of India, under project # 12-R&D-TFR-5.02-0700. MPS acknowledges funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement No. 694745). AC acknowledge support from the Women’s Scientist scheme (WOS-A), Department of Science & Technology, India. NDB acknowledge support from the Department of Science & Technology, Government of India, grant SR/WOS-A/PM-1031/2014. SH is supported by JSPS KAKENHI Grant Number 20J20509. KT is partially supported by JSPS KAKENHI Grant Numbers 20H00180, 21H01130 and 21H04467, Bilateral Joint Research Projects of JSPS, and the ISM Cooperative Research Program (2021-ISMCRP-2017).
+
+[lastpage]
+
+[1] E-mail:nobleson.phy@gmail.com
+
+[2] https://github.com/pennucci/PulsePortraiture

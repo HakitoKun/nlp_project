@@ -1,0 +1,1298 @@
+@xmath0;$\bx$
+@xmath1;$\yt$
+@xmath2;$\yt=0$
+@xmath3;$\bx$
+@xmath4;$\bx_1$
+@xmath5;$\bx_2$
+@xmath6;$\yt \gg 0$
+@xmath7;$\bx_1$
+@xmath8;$\bx_2$
+@xmath9;$\bx$
+@xmath10;$\textbf{y}_{\textbf{target}}$
+@xmath11;$D$
+@xmath12;$\bx$
+@xmath13;$\textbf{y}_{\textbf{target}}$
+@xmath14;$\by \rightarrow \bx$
+@xmath15;$\tau$
+@xmath16;$y$
+@xmath17;$\bx \in \mathbb{R}^2$
+@xmath18;$y=0$
+@xmath19;$\bx$
+@xmath20;$y=0$
+@xmath21;$y=2\pi$
+@xmath0;$p(\mathbf{y}|\mathbf{x})$
+@xmath1;$\mathbf{x}\in \mathbb{R}^{d_x}$
+@xmath2;$\mathbf{y} \in \mathbb{R}^{d_y}$
+@xmath3;$\yt$
+@xmath4;$\bx'$
+@xmath5;$\mathbcal{l}(\by, \yt)$
+@xmath6;$\yt$
+@xmath7;$\by$
+@xmath8;$\mathbcal{l}(\by, \yt)=||\by - \yt||_2^2$
+@xmath9;$\bx$
+@xmath10;$\yt$
+@xmath11;$D=\{(\mathbf{x}_i, \mathbf{y}_i), 1 \le i \le n\}$
+@xmath12;$\mathbf{x}_i$
+@xmath13;$\mathbf{x}_i \sim p(\mathbf{x})$
+@xmath14;$\by_i$
+@xmath15;$\mathbf{y}_i \sim p(\mathbf{y}|\mathbf{x}_i)$
+@xmath16;$p(\mathbf{x}, \mathbf{y})=p(\mathbf{x})p(\mathbf{y}|\mathbf{x})$
+@xmath17;$D$
+@xmath18;$p(\bx)$
+@xmath19;$\bx$
+@xmath20;$\bx$
+@xmath21;$\bx$
+@xmath22;$\bx$
+@xmath23;$\fforward(\bx)$
+@xmath24;$\by$
+@xmath25;$\bx_i$
+@xmath26;$\mathbcal{r}(\bx_i)$
+@xmath27;$(\bx_i, \by_i)$
+@xmath28;$\by_i$
+@xmath29;$p(\by|\bx')$
+@xmath30;$\yt$
+@xmath31;$\bx'$
+@xmath32;$\yt$
+@xmath33;$\bR$
+@xmath34;$\bF(\bx)$
+@xmath35;$\by$
+@xmath36;$\bx$
+@xmath37;$\bR$
+@xmath38;$\bB$
+@xmath39;$p(\by|\bx')$
+@xmath40;$\bR$
+@xmath41;$\bB$
+@xmath42;$\fforward(\bx)$
+@xmath43;$\bF(\bx)$
+@xmath44;$\fforward(\bx)$
+@xmath45;$\bF(\bx)$
+@xmath46;$\bR$
+@xmath47;$\bF$
+@xmath48;$\fforward$
+@xmath49;$(\bx_i, \by_i)$
+@xmath50;$\bF(\bx_i)$
+@xmath51;$\bx_i$
+@xmath52;$\mathbcal{r}(\bx_i)$
+@xmath53;$\bR$
+@xmath54;$\bB$
+@xmath55;$(\bx_i, \by_i)$
+@xmath56;$(\bx_i, \bF(\bx_i))$
+@xmath57;$\by_i$
+@xmath58;$\bx_i$
+@xmath59;$\by_i$
+@xmath60;$\bx_i$
+@xmath61;$\by_i$
+@xmath62;$\by_i$
+@xmath63;$p(\bx|\by)$
+@xmath64;$\by$
+@xmath65;$\bx$
+@xmath66;$\by$
+@xmath67;$\bx$
+@xmath68;$p(\bx|\by)$
+@xmath69;$p(\bx|\by)$
+@xmath70;$\mathbf{x}$
+@xmath71;$\mathbf{x}=f(\mathbf{z}; \by, \theta)$
+@xmath72;$\mathbf{z}$
+@xmath73;$p_\mathbf{z}(\mathbf{z})$
+@xmath74;$\by$
+@xmath75;$\theta$
+@xmath76;$p(\mathbf{z})$
+@xmath77;$J_{\mathbf{z}}$
+@xmath78;$p(\bx|\by)$
+@xmath79;$D=\{(\bx_1, \by_1), (\bx_2, \by_2), ..., (\bx_n, \by_n)\}$
+@xmath80;$k$
+@xmath81;$\tau$
+@xmath82;$\mathbcal{w} \in \mathbb{R}^n$
+@xmath83;$D$
+@xmath84;$k$
+@xmath85;$\{D_1, D_2, ..., D_k\}$
+@xmath86;$i$
+@xmath87;$\{1,...,k\}$
+@xmath88;$D_{t}=\{D_j, j\ne i\}$
+@xmath89;$D_{v}=D_i$
+@xmath90;$\fforward$
+@xmath91;$\mathbcal{l}(\by, \fforward(\bx))$
+@xmath92;$D_t$
+@xmath93;$\mathbcal{r}_{i}=\mathbcal{l}(\by, \fforward(\bx)), (\bx, \by) \in D_v$
+@xmath94;$\mathbcal{r} = \{\mathbcal{r}_i, i \in \{1,...,k\}\}$
+@xmath95;$\mathbcal{r} = \frac{\mathbcal{r}}{\textbf{mean}(\mathbcal{r})}$
+@xmath96;$\mathbcal{w} = \textbf{exp}(-\tau \mathbcal{r})$
+@xmath97;$\mathbcal{w} = \frac{\mathbcal{w}}{\textbf{mean}(\mathbcal{w})}$
+@xmath98;$\mathbcal{w}$
+@xmath99;$\mathbcal{w}_i = \mathbcal{w}(\bx_i, \by_i, D)$
+@xmath100;$D=\{(\bx_1, \by_1), (\bx_2, \by_2), ... (\bx_n, \by_n)\}$
+@xmath101;$\mathbcal{w}(\bx_i, \by_i, D)$
+@xmath102;$\bx_i$
+@xmath103;$\by_i$
+@xmath104;$D$
+@xmath105;$\mathbcal{r}$
+@xmath106;$\mathbcal{w}$
+@xmath107;$\mathbcal{w}$
+@xmath108;$\mathbcal{r}$
+@xmath109;$\mathbcal{r}$
+@xmath110;$\by$
+@xmath111;$\mathbcal{r}$
+@xmath112;$\mathbcal{w}$
+@xmath113;$\text{eps}$
+@xmath114;$\mathbcal{w}$
+@xmath115;$\text{eps}=10^{-4}$
+@xmath116;$\theta$
+@xmath117;$\tau$
+@xmath118;\begin{equation}\label{rid_objective}
+  \mathbcal{L}_{p(\by|\bx)}(\bx', \yt) = \bE_{\by'\sim p(\mathbf{y}|\mathbf{x}')} \mathbcal{l}(\by', \yt)
+\end{equation}
+@xmath120;\begin{equation}\label{rid_optimization}
+  \min_{\bx'} \mathbcal{L}_{p(\by|\bx)}(\bx', \yt)
+\end{equation}
+@xmath122;\begin{equation}\label{sample_robustness}
+  \mathbcal{r}(\bx_i) = \mathbcal{l}(\by_i, \fforward(\bx_i))
+\end{equation}
+@xmath124;\begin{equation}
+  \mathbcal{L}_{p(\by|\bx)}(\bx', \yt) \approx \frac{1}{N} \sum_{i=1}^{N} \mathbcal{l}(\by_i, \yt)
+\end{equation}
+@xmath126;\begin{equation}
+  \mathbf{x}=f(\mathbf{z}; \by, \theta) \quad \text { where } \quad \mathbf{z} \sim p_{\mathrm{z}}(\mathbf{z})
+\end{equation}
+@xmath128;\begin{equation}
+  p_{\mathrm{x}}(\mathbf{x})=p_{\mathrm{z}}(\mathbf{z})\left|\operatorname{det} J_{\mathbf{z}}\right|^{-1} \quad \text
+   { where }  \mathbf{z} = f^{-1}(\mathbf{x}; \by, \theta)
+\end{equation}
+@xmath130;\begin{equation}\label{jacobian}
+  J_{\mathbf{z}}=\left.\frac{\partial f(\mathbf{z}; \by, \theta)}{\partial \mathbf{z}}\right|_{\mathbf{z}=f^{-1}(\mathbf{x}; \by, \theta)}
+\end{equation}
+@xmath132;\begin{equation}
+  L^w(D;\theta)= \Pi^{n}_{i=1} q(\bx_i| \by_i; \theta)^{\mathbcal{w}(\bx_i, \by_i, D)}
+\end{equation}
+@xmath134;\begin{equation}
+  \mathbcal{w}(\bx_i, \by_i, D) = \textbf{exp}\left(-\tau \mathbcal{r}(\bx_i)\right) \quad \textbf{where} \quad \tau \ge 0
+\end{equation}
+@xmath0;$\mathcal{n}_x$
+@xmath1;$\mathcal{n}_y$
+@xmath2;$\mathcal{n}_{xy}$
+@xmath3;$\mathcal{n}_x$
+@xmath4;$\mathcal{n}_y$
+@xmath5;$\mathcal{n}_{xy}$
+@xmath6;$\mathcal{n}_x$
+@xmath7;$\mathcal{n}_y$
+@xmath8;$\mathcal{n}_{xy}$
+@xmath9;$p$
+@xmath10;$\tau$
+@xmath11;$p(\bx|\by)$
+@xmath12;$p(\bx)$
+@xmath13;$p(\bx|\by)$
+@xmath14;$p(\bx|\by, \bz)$
+@xmath15;$\bx \rightarrow \by$
+@xmath16;$\by \rightarrow \bx$
+@xmath17;$[10^{-2}, 10^{-3}, 10^{-4}]$
+@xmath18;$[10^{-4}, 10^{-5}, 10^{-6}, 10^{-7}]$
+@xmath19;$\bx$
+@xmath20;$\bx$
+@xmath21;$g(\bx)=\by$
+@xmath22;$\bx$
+@xmath23;$\by$
+@xmath24;$\bx$
+@xmath25;$\by$
+@xmath26;$g(\bx)=\by$
+@xmath27;$\bx$
+@xmath28;$y$
+@xmath29;$\bx$
+@xmath30;$\by$
+@xmath31;$\bx_1$
+@xmath32;$\bx_2$
+@xmath33;$\yt$
+@xmath34;$\yt$
+@xmath35;$g(\bx_1)=\yt$
+@xmath36;$g(\bx_2)=\yt$
+@xmath37;$\bx_1$
+@xmath38;$\bx_2$
+@xmath39;$\yt$
+@xmath40;$\bx_1$
+@xmath41;$\bx_2$
+@xmath42;$\bx$
+@xmath43;$\yt$
+@xmath44;$\bx$
+@xmath45;$\by$
+@xmath46;$\bx$
+@xmath47;$\by$
+@xmath48;$\epsilon$
+@xmath49;$\mathcal{n}_x$
+@xmath50;$\mathcal{n}_y$
+@xmath51;$\mathcal{n}_{xy}$
+@xmath52;$\mathcal{n}_x$
+@xmath53;$p(\bx, \by)$
+@xmath54;$D_t = \{y_1, y_2,...y_{n_t}\}$
+@xmath55;$\tau$
+@xmath56;$\tau$
+@xmath57;$\tau$
+@xmath58;$\by=0$
+@xmath59;$\tau$
+@xmath60;$\tau$
+@xmath61;$\tau$
+@xmath62;$||\frac{2}{3}-0||_2^2$
+@xmath63;$||\frac{1}{3}-0||_2^2$
+@xmath64;$\by$
+@xmath65;$l2$
+@xmath66;$\tau$
+@xmath67;$\by$
+@xmath68;$\by$
+@xmath69;$\bx$
+@xmath70;$y$
+@xmath71;$\bx=(x_1, x_2)$
+@xmath72;$y$
+@xmath73;$\bx$
+@xmath74;$\bx$
+@xmath75;$\bx=(x_1, x_2)$
+@xmath76;$y$
+@xmath77;$0, \frac{1}{3}, \frac{2}{3}$
+@xmath78;$\bx$
+@xmath79;$\bx=(x_1, x_2)$
+@xmath80;$(0, -1)$
+@xmath81;$(0, 1)$
+@xmath82;$y$
+@xmath83;$\by$
+@xmath84;$\by$
+@xmath85;$\by$
+@xmath86;$\bx_1$
+@xmath87;$\bx_2$
+@xmath88;$\yt$
+@xmath89;$\by$
+@xmath90;$\tau$
+@xmath91;$\tau$
+@xmath92;$\tau$
+@xmath93;$\tau$
+@xmath94;$\tau$
+@xmath95;$\tau$
+@xmath96;\begin{equation}
+    g_{n_x}(\bx) = g(\bx + \mathcal{n}_x(\bx, \be))
+\end{equation}
+@xmath98;\begin{equation}
+    g_{n_y}(\bx) = g(\bx) + \mathcal{n}_y(g(\bx), \be)
+\end{equation}
+@xmath100;\begin{equation}\label{resim_err}
+    \bE_{\yt \sim p(\by), \bx' \sim \text{IDM}(\yt)} \mathbcal{L}_{p(\by|\bx)}(\bx', \yt)
+\end{equation}
+@xmath102;\begin{equation}
+    \frac{1}{n_t}\sum_{i=1}^{n_t} (\by_i - g_n(\text{IDM}(\by_i)))^2
+\end{equation}
+@xmath0;$\yt$
+@xmath1;$\bx$
+@xmath0;$^{-2}$
+@xmath1;$\tau_{sc}$
+@xmath2;$^1$
+@xmath3;$^{2}$
+@xmath4;$^3$
+@xmath5;$^{4}$
+@xmath6;$^5$
+@xmath7;$^{6}$
+@xmath8;$^{5,7}$
+@xmath9;$^{3}$
+@xmath10;$^{4}$
+@xmath11;$^{8}$
+@xmath12;$^9$
+@xmath13;$^{1}$
+@xmath14;$^{10,11}$
+@xmath15;$^{12}$
+@xmath16;$^{10}$
+@xmath17;$^{7}$
+@xmath18;$^{7}$
+@xmath19;$^5$
+@xmath20;$^{14}$
+@xmath21;$^{15}$
+@xmath22;$^{3}$
+@xmath23;$^{14}$
+@xmath24;$^{16}$
+@xmath25;$^5$
+@xmath26;$^{17}$
+@xmath27;$^{17}$
+@xmath28;$^{18}$
+@xmath29;$^{10,11}$
+@xmath30;$^{17}$
+@xmath31;$^{19}$
+@xmath32;$^{20}$
+@xmath33;$^{21,22}$
+@xmath34;$^{1}$
+@xmath35;$^{2}$
+@xmath36;$^{3}$
+@xmath37;$^{4}$
+@xmath38;$^{5}$
+@xmath39;$^{6}$
+@xmath40;$^{7}$
+@xmath41;$^{8}$
+@xmath42;$^{9}$
+@xmath43;$^{10}$
+@xmath44;$^{11}$
+@xmath45;$^{12}$
+@xmath46;$^{14}$
+@xmath47;$^{15}$
+@xmath48;$^{16}$
+@xmath49;$^{17}$
+@xmath50;$^{18}$
+@xmath51;$^{19}$
+@xmath52;$^{20}$
+@xmath53;$^{21}$
+@xmath54;$^{22}$
+@xmath55;$^{20}$
+@xmath56;$10^{-6}$
+@xmath57;$^{-3}$
+@xmath58;$\mu$
+@xmath59;$\mu$
+@xmath60;$-$
+@xmath61;$\nu^{-2}$
+@xmath62;$\nu^{-4.4}$
+@xmath63;$-$
+@xmath64;$-$
+@xmath65;$-$
+@xmath66;$-$
+@xmath67;$-$
+@xmath68;$\mu$
+@xmath69;$n_{chan} \times n_{bin}$
+@xmath70;$n_{chan}$
+@xmath71;$n_{bin}$
+@xmath72;$e_i$
+@xmath73;$B_i$
+@xmath74;$\tilde{p}$
+@xmath75;$T(\nu)$
+@xmath76;$\nu$
+@xmath77;$\chi^2$
+@xmath78;$n$
+@xmath79;$\nu_n$
+@xmath80;$k$
+@xmath81;$d_{nk}$
+@xmath82;$\sigma_n^2$
+@xmath83;$t_{nk}$
+@xmath84;$a_n$
+@xmath85;$\phi_n$
+@xmath86;$\phi_0$
+@xmath87;$\phi_n$
+@xmath88;$P_s$
+@xmath89;$K$
+@xmath90;$4.148808 \times$
+@xmath91;$10^3$
+@xmath92;$^2$
+@xmath93;$^3$
+@xmath94;$^{-1}$
+@xmath95;$F_0$
+@xmath96;$F_1$
+@xmath97;$_b$
+@xmath98;$a_p \sin i$
+@xmath99;$\omega$
+@xmath100;$T_0$
+@xmath101;$\times 10^{-6}$
+@xmath102;$\times 10^{-4}$
+@xmath103;$^{-3}$
+@xmath104;$-$
+@xmath105;$+$
+@xmath106;$\mu$
+@xmath107;$+$
+@xmath108;$+$
+@xmath109;$+$
+@xmath110;${\mu}$
+@xmath111;${\mu}$
+@xmath112;$+$
+@xmath113;$+$
+@xmath114;$+$
+@xmath115;$-$
+@xmath116;$+$
+@xmath117;$+$
+@xmath118;$n_{eig}$
+@xmath119;$-$
+@xmath120;$-$
+@xmath121;$n_{eig}$
+@xmath122;$2$
+@xmath123;$+$
+@xmath124;$+$
+@xmath125;$+$
+@xmath126;$\nu^{-2}$
+@xmath127;$+$
+@xmath128;$2.7 \times $
+@xmath129;$^{-5}$
+@xmath130;$^{-3}$
+@xmath131;$1.4 \times $
+@xmath132;$^{-2}$
+@xmath133;$^{-3}$
+@xmath134;$p-$
+@xmath135;$p$
+@xmath136;$p-$
+@xmath137;$< 10^{-2}$
+@xmath138;$\mathcal{O}$
+@xmath139;$^{-4}$
+@xmath140;$^{-3}$
+@xmath141;$\mu$
+@xmath142;$\mu$
+@xmath143;$^{-3}$
+@xmath144;$^{-3}$
+@xmath145;$^{-3}$
+@xmath146;$p$
+@xmath147;$\times 10^{-2}$
+@xmath148;$\mu$
+@xmath149;$\mu$
+@xmath150;$\mu$
+@xmath151;$^{-3}$
+@xmath152;$^{-3}$
+@xmath153;$^{-3}$
+@xmath154;$p$
+@xmath155;$\times 10^{-2}$
+@xmath156;$\mu$
+@xmath157;$\mu$
+@xmath158;$\mu$
+@xmath159;$^{-3}$
+@xmath160;$^{-3}$
+@xmath161;$^{-3}$
+@xmath162;$p$
+@xmath163;$\times 10^{-5}$
+@xmath164;$\mu$
+@xmath165;$\mu$
+@xmath166;$\mu$
+@xmath167;$^{-3}$
+@xmath168;$^{-3}$
+@xmath169;$^{-3}$
+@xmath170;$p$
+@xmath171;$\times 10^{-5}$
+@xmath172;$\mu$
+@xmath173;$\mu$
+@xmath174;$\mu$
+@xmath175;$^{-3}$
+@xmath176;$^{-3}$
+@xmath177;$^{-3}$
+@xmath178;$p$
+@xmath179;$\times 10^{-4}$
+@xmath180;$\mu$
+@xmath181;$\mu$
+@xmath182;$\mu$
+@xmath183;$p$
+@xmath184;$\mu$
+@xmath185;$\mu$
+@xmath186;$^{-3}$
+@xmath187;$\times 10^{-4}$
+@xmath188;$^{-3}$
+@xmath189;$\times 10^{-5}$
+@xmath190;$^{-3}$
+@xmath191;$\rho $
+@xmath192;$-$
+@xmath193;$1\times 10^{-2} $
+@xmath194;$+$
+@xmath195;$2\times 10^{-2} $
+@xmath196;$-$
+@xmath197;$8\times 10^{-5} $
+@xmath198;$+$
+@xmath199;$4\times 10^{-5} $
+@xmath200;$-$
+@xmath201;$2\times 10^{-4} $
+@xmath202;$+$
+@xmath203;$+$
+@xmath204;$+$
+@xmath205;$\mathcal{O}$
+@xmath206;$10^{-6}$
+@xmath207;$p$
+@xmath208;$+$
+@xmath209;$+$
+@xmath210;$F_{0}$
+@xmath211;$3.35\times 10^{-10}$
+@xmath212;$1.32\times 10^{-9}$
+@xmath213;$-4.14\times 10^{-10}$
+@xmath214;$F_{1}$
+@xmath215;$-1.03\times 10^{-15}$
+@xmath216;$1.37\times 10^{-15}$
+@xmath217;$-1.89\times 10^{-15}$
+@xmath218;$5.98\times 10^{-20}$
+@xmath219;$-8.62\times 10^{-16}$
+@xmath220;$A_1$
+@xmath221;$5.32\times 10^{-6}$
+@xmath222;$2.07\times 10^{-5}$
+@xmath223;$1.54\times 10^{-5}$
+@xmath224;$P_b$
+@xmath225;$2.68\times 10^{-5}$
+@xmath226;$1.03\times 10^{-4}$
+@xmath227;$5.37\times 10^{-5}$
+@xmath228;$OM$
+@xmath229;${\chi}^2$
+@xmath230;$+$
+@xmath231;$F_{0}$
+@xmath232;$6.60\times 10^{-9}$
+@xmath233;$8.02\times 10^{-9}$
+@xmath234;$-2.78\times 10^{-9}$
+@xmath235;$F_{1}$
+@xmath236;$-3.98\times 10^{-16}$
+@xmath237;$2.14\times 10^{-17}$
+@xmath238;$-3.89\times 10^{-16}$
+@xmath239;$2.60\times 10^{-17}$
+@xmath240;$9.16\times 10^{-18}$
+@xmath241;$A_1$
+@xmath242;$9.42\times 10^{-7}$
+@xmath243;$1.11\times 10^{-6}$
+@xmath244;$2.90\times 10^{-6}$
+@xmath245;$P_b$
+@xmath246;$5.42\times 10^{-7}$
+@xmath247;$5.72\times 10^{-7}$
+@xmath248;$3.84\times 10^{-7}$
+@xmath249;$OM$
+@xmath250;${\chi}^2$
+@xmath251;$-$
+@xmath252;$F_{0}$
+@xmath253;$2.38\times 10^{-9}$
+@xmath254;$4.52\times 10^{-9}$
+@xmath255;$-1.16\times 10^{-8}$
+@xmath256;$F_{1}$
+@xmath257;$-1.66\times 10^{-15}$
+@xmath258;$7.62\times 10^{-18}$
+@xmath259;$-1.62\times 10^{-15}$
+@xmath260;$1.45\times 10^{-17}$
+@xmath261;$3.69\times 10^{-17}$
+@xmath262;$A_1$
+@xmath263;$2.67\times 10^{-7}$
+@xmath264;$5.20\times 10^{-7}$
+@xmath265;$-6.13\times 10^{-7}$
+@xmath266;$P_b$
+@xmath267;$1.09\times 10^{-9}$
+@xmath268;$1.92\times 10^{-9}$
+@xmath269;$-1.30\times 10^{-8}$
+@xmath270;${\chi}^2$
+@xmath271;$+$
+@xmath272;$F_{0}$
+@xmath273;$8.48\times 10^{-10}$
+@xmath274;$9.85\times 10^{-9}$
+@xmath275;$-5.25\times 10^{-9}$
+@xmath276;$F_{1}$
+@xmath277;$-4.32\times 10^{-14}$
+@xmath278;$2.96\times 10^{-18}$
+@xmath279;$-4.32\times 10^{-14}$
+@xmath280;$3.13\times 10^{-17}$
+@xmath281;$1.60\times 10^{-17}$
+@xmath282;${\chi}^2$
+@xmath283;$-$
+@xmath284;$F_{0}$
+@xmath285;$9.37\times 10^{-10}$
+@xmath286;$3.14\times 10^{-9}$
+@xmath287;$-8.24\times 10^{-9}$
+@xmath288;$F_{1}$
+@xmath289;$-1.37\times 10^{-16}$
+@xmath290;$2.99\times 10^{-18}$
+@xmath291;$-1.10\times 10^{-16}$
+@xmath292;$9.99\times 10^{-18}$
+@xmath293;$2.62\times 10^{-17}$
+@xmath294;$A_1$
+@xmath295;$5.36\times 10^{-7}$
+@xmath296;$1.72\times 10^{-6}$
+@xmath297;$-2.13\times 10^{-6}$
+@xmath298;$P_b$
+@xmath299;$6.92\times 10^{-9}$
+@xmath300;$2.26\times 10^{-8}$
+@xmath301;$-4.04\times 10^{-8}$
+@xmath302;${\chi}^2$
+@xmath303;$F_{0}$
+@xmath304;$F_{1}$
+@xmath305;$A_1$
+@xmath306;$P_b$
+@xmath307;$+$
+@xmath308;$+$
+@xmath309;$-$
+@xmath310;$-$
+@xmath311;$-$
+@xmath312;$\times$
+@xmath313;$^{-6}$
+@xmath314;$^{-3}$
+@xmath315;$\times$
+@xmath316;$^{-4}$
+@xmath317;$^{-3}$
+@xmath318;$-$
+@xmath319;$\mathcal{O}$
+@xmath320;$^{-5}$
+@xmath321;$-$
+@xmath322;$\mathcal{O}$
+@xmath323;$^{-4}$
+@xmath324;$^{-3}$
+@xmath325;$\mu$
+@xmath326;$-$
+@xmath327;$-$
+@xmath328;$-$
+@xmath329;$-$
+@xmath330;\begin{equation}
+T(\nu) = \sum_{i=1}^{n_{eig}} B_i(\nu) \hat{e_i} + \tilde{p}
+\end{equation}
+@xmath332;\begin{equation}
+\label{eqn:wb_toa}
+\chi^2 = \sum_{n,k} \frac{|d_{nk} - a_n t_{nk}e^{-2\pi i k \phi_n}|^2}{\sigma_n^2}.
+\end{equation}
+@xmath334;\begin{equation}
+\phi_n(\nu_n) = \phi_0 + \frac{K \times DM}{P_s} (\nu_n^{-2}-\nu_{\phi_0}^{-2}),
+\end{equation}
+@xmath0;$^{-2}$
+@xmath1;$\tau_{sc}$
+@xmath2;$^1$
+@xmath3;$^{2}$
+@xmath4;$^3$
+@xmath5;$^{4}$
+@xmath6;$^5$
+@xmath7;$^{6}$
+@xmath8;$^{5,7}$
+@xmath9;$^{3}$
+@xmath10;$^{4}$
+@xmath11;$^{8}$
+@xmath12;$^9$
+@xmath13;$^{1}$
+@xmath14;$^{10,11}$
+@xmath15;$^{12}$
+@xmath16;$^{10}$
+@xmath17;$^{7}$
+@xmath18;$^{7}$
+@xmath19;$^5$
+@xmath20;$^{14}$
+@xmath21;$^{15}$
+@xmath22;$^{3}$
+@xmath23;$^{14}$
+@xmath24;$^{16}$
+@xmath25;$^5$
+@xmath26;$^{17}$
+@xmath27;$^{17}$
+@xmath28;$^{18}$
+@xmath29;$^{10,11}$
+@xmath30;$^{17}$
+@xmath31;$^{19}$
+@xmath32;$^{20}$
+@xmath33;$^{21,22}$
+@xmath34;$^{1}$
+@xmath35;$^{2}$
+@xmath36;$^{3}$
+@xmath37;$^{4}$
+@xmath38;$^{5}$
+@xmath39;$^{6}$
+@xmath40;$^{7}$
+@xmath41;$^{8}$
+@xmath42;$^{9}$
+@xmath43;$^{10}$
+@xmath44;$^{11}$
+@xmath45;$^{12}$
+@xmath46;$^{14}$
+@xmath47;$^{15}$
+@xmath48;$^{16}$
+@xmath49;$^{17}$
+@xmath50;$^{18}$
+@xmath51;$^{19}$
+@xmath52;$^{20}$
+@xmath53;$^{21}$
+@xmath54;$^{22}$
+@xmath55;$^{20}$
+@xmath56;$10^{-6}$
+@xmath57;$^{-3}$
+@xmath58;$\mu$
+@xmath59;$\mu$
+@xmath60;$-$
+@xmath61;$\nu^{-2}$
+@xmath62;$\nu^{-4.4}$
+@xmath63;$-$
+@xmath64;$-$
+@xmath65;$-$
+@xmath66;$-$
+@xmath67;$-$
+@xmath68;$\mu$
+@xmath69;$n_{chan} \times n_{bin}$
+@xmath70;$n_{chan}$
+@xmath71;$n_{bin}$
+@xmath72;$e_i$
+@xmath73;$B_i$
+@xmath74;$\tilde{p}$
+@xmath75;$T(\nu)$
+@xmath76;$\nu$
+@xmath77;$\chi^2$
+@xmath78;$n$
+@xmath79;$\nu_n$
+@xmath80;$k$
+@xmath81;$d_{nk}$
+@xmath82;$\sigma_n^2$
+@xmath83;$t_{nk}$
+@xmath84;$a_n$
+@xmath85;$\phi_n$
+@xmath86;$\phi_0$
+@xmath87;$\phi_n$
+@xmath88;$P_s$
+@xmath89;$K$
+@xmath90;$4.148808 \times$
+@xmath91;$10^3$
+@xmath92;$^2$
+@xmath93;$^3$
+@xmath94;$^{-1}$
+@xmath95;$F_0$
+@xmath96;$F_1$
+@xmath97;$_b$
+@xmath98;$a_p \sin i$
+@xmath99;$\omega$
+@xmath100;$T_0$
+@xmath101;$\times 10^{-6}$
+@xmath102;$\times 10^{-4}$
+@xmath103;$^{-3}$
+@xmath104;$-$
+@xmath105;$+$
+@xmath106;$\mu$
+@xmath107;$+$
+@xmath108;$+$
+@xmath109;$+$
+@xmath110;${\mu}$
+@xmath111;${\mu}$
+@xmath112;$+$
+@xmath113;$+$
+@xmath114;$+$
+@xmath115;$-$
+@xmath116;$+$
+@xmath117;$+$
+@xmath118;$n_{eig}$
+@xmath119;$-$
+@xmath120;$-$
+@xmath121;$n_{eig}$
+@xmath122;$2$
+@xmath123;$+$
+@xmath124;$+$
+@xmath125;$+$
+@xmath126;$\nu^{-2}$
+@xmath127;$+$
+@xmath128;$2.7 \times $
+@xmath129;$^{-5}$
+@xmath130;$^{-3}$
+@xmath131;$1.4 \times $
+@xmath132;$^{-2}$
+@xmath133;$^{-3}$
+@xmath134;$p-$
+@xmath135;$p$
+@xmath136;$p-$
+@xmath137;$< 10^{-2}$
+@xmath138;$\mathcal{O}$
+@xmath139;$^{-4}$
+@xmath140;$^{-3}$
+@xmath141;$\mu$
+@xmath142;$\mu$
+@xmath143;$^{-3}$
+@xmath144;$^{-3}$
+@xmath145;$^{-3}$
+@xmath146;$p$
+@xmath147;$\times 10^{-2}$
+@xmath148;$\mu$
+@xmath149;$\mu$
+@xmath150;$\mu$
+@xmath151;$^{-3}$
+@xmath152;$^{-3}$
+@xmath153;$^{-3}$
+@xmath154;$p$
+@xmath155;$\times 10^{-2}$
+@xmath156;$\mu$
+@xmath157;$\mu$
+@xmath158;$\mu$
+@xmath159;$^{-3}$
+@xmath160;$^{-3}$
+@xmath161;$^{-3}$
+@xmath162;$p$
+@xmath163;$\times 10^{-5}$
+@xmath164;$\mu$
+@xmath165;$\mu$
+@xmath166;$\mu$
+@xmath167;$^{-3}$
+@xmath168;$^{-3}$
+@xmath169;$^{-3}$
+@xmath170;$p$
+@xmath171;$\times 10^{-5}$
+@xmath172;$\mu$
+@xmath173;$\mu$
+@xmath174;$\mu$
+@xmath175;$^{-3}$
+@xmath176;$^{-3}$
+@xmath177;$^{-3}$
+@xmath178;$p$
+@xmath179;$\times 10^{-4}$
+@xmath180;$\mu$
+@xmath181;$\mu$
+@xmath182;$\mu$
+@xmath183;$p$
+@xmath184;$\mu$
+@xmath185;$\mu$
+@xmath186;$^{-3}$
+@xmath187;$\times 10^{-4}$
+@xmath188;$^{-3}$
+@xmath189;$\times 10^{-5}$
+@xmath190;$^{-3}$
+@xmath191;$\rho $
+@xmath192;$-$
+@xmath193;$1\times 10^{-2} $
+@xmath194;$+$
+@xmath195;$2\times 10^{-2} $
+@xmath196;$-$
+@xmath197;$8\times 10^{-5} $
+@xmath198;$+$
+@xmath199;$4\times 10^{-5} $
+@xmath200;$-$
+@xmath201;$2\times 10^{-4} $
+@xmath202;$+$
+@xmath203;$+$
+@xmath204;$+$
+@xmath205;$\mathcal{O}$
+@xmath206;$10^{-6}$
+@xmath207;$p$
+@xmath208;$+$
+@xmath209;$+$
+@xmath210;$F_{0}$
+@xmath211;$3.35\times 10^{-10}$
+@xmath212;$1.32\times 10^{-9}$
+@xmath213;$-4.14\times 10^{-10}$
+@xmath214;$F_{1}$
+@xmath215;$-1.03\times 10^{-15}$
+@xmath216;$1.37\times 10^{-15}$
+@xmath217;$-1.89\times 10^{-15}$
+@xmath218;$5.98\times 10^{-20}$
+@xmath219;$-8.62\times 10^{-16}$
+@xmath220;$A_1$
+@xmath221;$5.32\times 10^{-6}$
+@xmath222;$2.07\times 10^{-5}$
+@xmath223;$1.54\times 10^{-5}$
+@xmath224;$P_b$
+@xmath225;$2.68\times 10^{-5}$
+@xmath226;$1.03\times 10^{-4}$
+@xmath227;$5.37\times 10^{-5}$
+@xmath228;$OM$
+@xmath229;${\chi}^2$
+@xmath230;$+$
+@xmath231;$F_{0}$
+@xmath232;$6.60\times 10^{-9}$
+@xmath233;$8.02\times 10^{-9}$
+@xmath234;$-2.78\times 10^{-9}$
+@xmath235;$F_{1}$
+@xmath236;$-3.98\times 10^{-16}$
+@xmath237;$2.14\times 10^{-17}$
+@xmath238;$-3.89\times 10^{-16}$
+@xmath239;$2.60\times 10^{-17}$
+@xmath240;$9.16\times 10^{-18}$
+@xmath241;$A_1$
+@xmath242;$9.42\times 10^{-7}$
+@xmath243;$1.11\times 10^{-6}$
+@xmath244;$2.90\times 10^{-6}$
+@xmath245;$P_b$
+@xmath246;$5.42\times 10^{-7}$
+@xmath247;$5.72\times 10^{-7}$
+@xmath248;$3.84\times 10^{-7}$
+@xmath249;$OM$
+@xmath250;${\chi}^2$
+@xmath251;$-$
+@xmath252;$F_{0}$
+@xmath253;$2.38\times 10^{-9}$
+@xmath254;$4.52\times 10^{-9}$
+@xmath255;$-1.16\times 10^{-8}$
+@xmath256;$F_{1}$
+@xmath257;$-1.66\times 10^{-15}$
+@xmath258;$7.62\times 10^{-18}$
+@xmath259;$-1.62\times 10^{-15}$
+@xmath260;$1.45\times 10^{-17}$
+@xmath261;$3.69\times 10^{-17}$
+@xmath262;$A_1$
+@xmath263;$2.67\times 10^{-7}$
+@xmath264;$5.20\times 10^{-7}$
+@xmath265;$-6.13\times 10^{-7}$
+@xmath266;$P_b$
+@xmath267;$1.09\times 10^{-9}$
+@xmath268;$1.92\times 10^{-9}$
+@xmath269;$-1.30\times 10^{-8}$
+@xmath270;${\chi}^2$
+@xmath271;$+$
+@xmath272;$F_{0}$
+@xmath273;$8.48\times 10^{-10}$
+@xmath274;$9.85\times 10^{-9}$
+@xmath275;$-5.25\times 10^{-9}$
+@xmath276;$F_{1}$
+@xmath277;$-4.32\times 10^{-14}$
+@xmath278;$2.96\times 10^{-18}$
+@xmath279;$-4.32\times 10^{-14}$
+@xmath280;$3.13\times 10^{-17}$
+@xmath281;$1.60\times 10^{-17}$
+@xmath282;${\chi}^2$
+@xmath283;$-$
+@xmath284;$F_{0}$
+@xmath285;$9.37\times 10^{-10}$
+@xmath286;$3.14\times 10^{-9}$
+@xmath287;$-8.24\times 10^{-9}$
+@xmath288;$F_{1}$
+@xmath289;$-1.37\times 10^{-16}$
+@xmath290;$2.99\times 10^{-18}$
+@xmath291;$-1.10\times 10^{-16}$
+@xmath292;$9.99\times 10^{-18}$
+@xmath293;$2.62\times 10^{-17}$
+@xmath294;$A_1$
+@xmath295;$5.36\times 10^{-7}$
+@xmath296;$1.72\times 10^{-6}$
+@xmath297;$-2.13\times 10^{-6}$
+@xmath298;$P_b$
+@xmath299;$6.92\times 10^{-9}$
+@xmath300;$2.26\times 10^{-8}$
+@xmath301;$-4.04\times 10^{-8}$
+@xmath302;${\chi}^2$
+@xmath303;$F_{0}$
+@xmath304;$F_{1}$
+@xmath305;$A_1$
+@xmath306;$P_b$
+@xmath307;$+$
+@xmath308;$+$
+@xmath309;$-$
+@xmath310;$-$
+@xmath311;$-$
+@xmath312;$\times$
+@xmath313;$^{-6}$
+@xmath314;$^{-3}$
+@xmath315;$\times$
+@xmath316;$^{-4}$
+@xmath317;$^{-3}$
+@xmath318;$-$
+@xmath319;$\mathcal{O}$
+@xmath320;$^{-5}$
+@xmath321;$-$
+@xmath322;$\mathcal{O}$
+@xmath323;$^{-4}$
+@xmath324;$^{-3}$
+@xmath325;$\mu$
+@xmath326;$-$
+@xmath327;$-$
+@xmath328;$-$
+@xmath329;$-$
+@xmath330;\begin{equation}
+T(\nu) = \sum_{i=1}^{n_{eig}} B_i(\nu) \hat{e_i} + \tilde{p}
+\end{equation}
+@xmath332;\begin{equation}
+\label{eqn:wb_toa}
+\chi^2 = \sum_{n,k} \frac{|d_{nk} - a_n t_{nk}e^{-2\pi i k \phi_n}|^2}{\sigma_n^2}.
+\end{equation}
+@xmath334;\begin{equation}
+\phi_n(\nu_n) = \phi_0 + \frac{K \times DM}{P_s} (\nu_n^{-2}-\nu_{\phi_0}^{-2}),
+\end{equation}
+@xmath0;$^{-2}$
+@xmath1;$\tau_{sc}$
+@xmath2;$^1$
+@xmath3;$^{2}$
+@xmath4;$^3$
+@xmath5;$^{4}$
+@xmath6;$^5$
+@xmath7;$^{6}$
+@xmath8;$^{5,7}$
+@xmath9;$^{3}$
+@xmath10;$^{4}$
+@xmath11;$^{8}$
+@xmath12;$^9$
+@xmath13;$^{1}$
+@xmath14;$^{10,11}$
+@xmath15;$^{12}$
+@xmath16;$^{10}$
+@xmath17;$^{7}$
+@xmath18;$^{7}$
+@xmath19;$^5$
+@xmath20;$^{14}$
+@xmath21;$^{15}$
+@xmath22;$^{3}$
+@xmath23;$^{14}$
+@xmath24;$^{16}$
+@xmath25;$^5$
+@xmath26;$^{17}$
+@xmath27;$^{17}$
+@xmath28;$^{18}$
+@xmath29;$^{10,11}$
+@xmath30;$^{17}$
+@xmath31;$^{19}$
+@xmath32;$^{20}$
+@xmath33;$^{21,22}$
+@xmath34;$^{1}$
+@xmath35;$^{2}$
+@xmath36;$^{3}$
+@xmath37;$^{4}$
+@xmath38;$^{5}$
+@xmath39;$^{6}$
+@xmath40;$^{7}$
+@xmath41;$^{8}$
+@xmath42;$^{9}$
+@xmath43;$^{10}$
+@xmath44;$^{11}$
+@xmath45;$^{12}$
+@xmath46;$^{14}$
+@xmath47;$^{15}$
+@xmath48;$^{16}$
+@xmath49;$^{17}$
+@xmath50;$^{18}$
+@xmath51;$^{19}$
+@xmath52;$^{20}$
+@xmath53;$^{21}$
+@xmath54;$^{22}$
+@xmath55;$^{20}$
+@xmath56;$10^{-6}$
+@xmath57;$^{-3}$
+@xmath58;$\mu$
+@xmath59;$\mu$
+@xmath60;$-$
+@xmath61;$\nu^{-2}$
+@xmath62;$\nu^{-4.4}$
+@xmath63;$-$
+@xmath64;$-$
+@xmath65;$-$
+@xmath66;$-$
+@xmath67;$-$
+@xmath68;$\mu$
+@xmath69;$n_{chan} \times n_{bin}$
+@xmath70;$n_{chan}$
+@xmath71;$n_{bin}$
+@xmath72;$e_i$
+@xmath73;$B_i$
+@xmath74;$\tilde{p}$
+@xmath75;$T(\nu)$
+@xmath76;$\nu$
+@xmath77;$\chi^2$
+@xmath78;$n$
+@xmath79;$\nu_n$
+@xmath80;$k$
+@xmath81;$d_{nk}$
+@xmath82;$\sigma_n^2$
+@xmath83;$t_{nk}$
+@xmath84;$a_n$
+@xmath85;$\phi_n$
+@xmath86;$\phi_0$
+@xmath87;$\phi_n$
+@xmath88;$P_s$
+@xmath89;$K$
+@xmath90;$4.148808 \times$
+@xmath91;$10^3$
+@xmath92;$^2$
+@xmath93;$^3$
+@xmath94;$^{-1}$
+@xmath95;$F_0$
+@xmath96;$F_1$
+@xmath97;$_b$
+@xmath98;$a_p \sin i$
+@xmath99;$\omega$
+@xmath100;$T_0$
+@xmath101;$\times 10^{-6}$
+@xmath102;$\times 10^{-4}$
+@xmath103;$^{-3}$
+@xmath104;$-$
+@xmath105;$+$
+@xmath106;$\mu$
+@xmath107;$+$
+@xmath108;$+$
+@xmath109;$+$
+@xmath110;${\mu}$
+@xmath111;${\mu}$
+@xmath112;$+$
+@xmath113;$+$
+@xmath114;$+$
+@xmath115;$-$
+@xmath116;$+$
+@xmath117;$+$
+@xmath118;$n_{eig}$
+@xmath119;$-$
+@xmath120;$-$
+@xmath121;$n_{eig}$
+@xmath122;$2$
+@xmath123;$+$
+@xmath124;$+$
+@xmath125;$+$
+@xmath126;$\nu^{-2}$
+@xmath127;$+$
+@xmath128;$2.7 \times $
+@xmath129;$^{-5}$
+@xmath130;$^{-3}$
+@xmath131;$1.4 \times $
+@xmath132;$^{-2}$
+@xmath133;$^{-3}$
+@xmath134;$p-$
+@xmath135;$p$
+@xmath136;$p-$
+@xmath137;$< 10^{-2}$
+@xmath138;$\mathcal{O}$
+@xmath139;$^{-4}$
+@xmath140;$^{-3}$
+@xmath141;$\mu$
+@xmath142;$\mu$
+@xmath143;$^{-3}$
+@xmath144;$^{-3}$
+@xmath145;$^{-3}$
+@xmath146;$p$
+@xmath147;$\times 10^{-2}$
+@xmath148;$\mu$
+@xmath149;$\mu$
+@xmath150;$\mu$
+@xmath151;$^{-3}$
+@xmath152;$^{-3}$
+@xmath153;$^{-3}$
+@xmath154;$p$
+@xmath155;$\times 10^{-2}$
+@xmath156;$\mu$
+@xmath157;$\mu$
+@xmath158;$\mu$
+@xmath159;$^{-3}$
+@xmath160;$^{-3}$
+@xmath161;$^{-3}$
+@xmath162;$p$
+@xmath163;$\times 10^{-5}$
+@xmath164;$\mu$
+@xmath165;$\mu$
+@xmath166;$\mu$
+@xmath167;$^{-3}$
+@xmath168;$^{-3}$
+@xmath169;$^{-3}$
+@xmath170;$p$
+@xmath171;$\times 10^{-5}$
+@xmath172;$\mu$
+@xmath173;$\mu$
+@xmath174;$\mu$
+@xmath175;$^{-3}$
+@xmath176;$^{-3}$
+@xmath177;$^{-3}$
+@xmath178;$p$
+@xmath179;$\times 10^{-4}$
+@xmath180;$\mu$
+@xmath181;$\mu$
+@xmath182;$\mu$
+@xmath183;$p$
+@xmath184;$\mu$
+@xmath185;$\mu$
+@xmath186;$^{-3}$
+@xmath187;$\times 10^{-4}$
+@xmath188;$^{-3}$
+@xmath189;$\times 10^{-5}$
+@xmath190;$^{-3}$
+@xmath191;$\rho $
+@xmath192;$-$
+@xmath193;$1\times 10^{-2} $
+@xmath194;$+$
+@xmath195;$2\times 10^{-2} $
+@xmath196;$-$
+@xmath197;$8\times 10^{-5} $
+@xmath198;$+$
+@xmath199;$4\times 10^{-5} $
+@xmath200;$-$
+@xmath201;$2\times 10^{-4} $
+@xmath202;$+$
+@xmath203;$+$
+@xmath204;$+$
+@xmath205;$\mathcal{O}$
+@xmath206;$10^{-6}$
+@xmath207;$p$
+@xmath208;$+$
+@xmath209;$+$
+@xmath210;$F_{0}$
+@xmath211;$3.35\times 10^{-10}$
+@xmath212;$1.32\times 10^{-9}$
+@xmath213;$-4.14\times 10^{-10}$
+@xmath214;$F_{1}$
+@xmath215;$-1.03\times 10^{-15}$
+@xmath216;$1.37\times 10^{-15}$
+@xmath217;$-1.89\times 10^{-15}$
+@xmath218;$5.98\times 10^{-20}$
+@xmath219;$-8.62\times 10^{-16}$
+@xmath220;$A_1$
+@xmath221;$5.32\times 10^{-6}$
+@xmath222;$2.07\times 10^{-5}$
+@xmath223;$1.54\times 10^{-5}$
+@xmath224;$P_b$
+@xmath225;$2.68\times 10^{-5}$
+@xmath226;$1.03\times 10^{-4}$
+@xmath227;$5.37\times 10^{-5}$
+@xmath228;$OM$
+@xmath229;${\chi}^2$
+@xmath230;$+$
+@xmath231;$F_{0}$
+@xmath232;$6.60\times 10^{-9}$
+@xmath233;$8.02\times 10^{-9}$
+@xmath234;$-2.78\times 10^{-9}$
+@xmath235;$F_{1}$
+@xmath236;$-3.98\times 10^{-16}$
+@xmath237;$2.14\times 10^{-17}$
+@xmath238;$-3.89\times 10^{-16}$
+@xmath239;$2.60\times 10^{-17}$
+@xmath240;$9.16\times 10^{-18}$
+@xmath241;$A_1$
+@xmath242;$9.42\times 10^{-7}$
+@xmath243;$1.11\times 10^{-6}$
+@xmath244;$2.90\times 10^{-6}$
+@xmath245;$P_b$
+@xmath246;$5.42\times 10^{-7}$
+@xmath247;$5.72\times 10^{-7}$
+@xmath248;$3.84\times 10^{-7}$
+@xmath249;$OM$
+@xmath250;${\chi}^2$
+@xmath251;$-$
+@xmath252;$F_{0}$
+@xmath253;$2.38\times 10^{-9}$
+@xmath254;$4.52\times 10^{-9}$
+@xmath255;$-1.16\times 10^{-8}$
+@xmath256;$F_{1}$
+@xmath257;$-1.66\times 10^{-15}$
+@xmath258;$7.62\times 10^{-18}$
+@xmath259;$-1.62\times 10^{-15}$
+@xmath260;$1.45\times 10^{-17}$
+@xmath261;$3.69\times 10^{-17}$
+@xmath262;$A_1$
+@xmath263;$2.67\times 10^{-7}$
+@xmath264;$5.20\times 10^{-7}$
+@xmath265;$-6.13\times 10^{-7}$
+@xmath266;$P_b$
+@xmath267;$1.09\times 10^{-9}$
+@xmath268;$1.92\times 10^{-9}$
+@xmath269;$-1.30\times 10^{-8}$
+@xmath270;${\chi}^2$
+@xmath271;$+$
+@xmath272;$F_{0}$
+@xmath273;$8.48\times 10^{-10}$
+@xmath274;$9.85\times 10^{-9}$
+@xmath275;$-5.25\times 10^{-9}$
+@xmath276;$F_{1}$
+@xmath277;$-4.32\times 10^{-14}$
+@xmath278;$2.96\times 10^{-18}$
+@xmath279;$-4.32\times 10^{-14}$
+@xmath280;$3.13\times 10^{-17}$
+@xmath281;$1.60\times 10^{-17}$
+@xmath282;${\chi}^2$
+@xmath283;$-$
+@xmath284;$F_{0}$
+@xmath285;$9.37\times 10^{-10}$
+@xmath286;$3.14\times 10^{-9}$
+@xmath287;$-8.24\times 10^{-9}$
+@xmath288;$F_{1}$
+@xmath289;$-1.37\times 10^{-16}$
+@xmath290;$2.99\times 10^{-18}$
+@xmath291;$-1.10\times 10^{-16}$
+@xmath292;$9.99\times 10^{-18}$
+@xmath293;$2.62\times 10^{-17}$
+@xmath294;$A_1$
+@xmath295;$5.36\times 10^{-7}$
+@xmath296;$1.72\times 10^{-6}$
+@xmath297;$-2.13\times 10^{-6}$
+@xmath298;$P_b$
+@xmath299;$6.92\times 10^{-9}$
+@xmath300;$2.26\times 10^{-8}$
+@xmath301;$-4.04\times 10^{-8}$
+@xmath302;${\chi}^2$
+@xmath303;$F_{0}$
+@xmath304;$F_{1}$
+@xmath305;$A_1$
+@xmath306;$P_b$
+@xmath307;$+$
+@xmath308;$+$
+@xmath309;$-$
+@xmath310;$-$
+@xmath311;$-$
+@xmath312;$\times$
+@xmath313;$^{-6}$
+@xmath314;$^{-3}$
+@xmath315;$\times$
+@xmath316;$^{-4}$
+@xmath317;$^{-3}$
+@xmath318;$-$
+@xmath319;$\mathcal{O}$
+@xmath320;$^{-5}$
+@xmath321;$-$
+@xmath322;$\mathcal{O}$
+@xmath323;$^{-4}$
+@xmath324;$^{-3}$
+@xmath325;$\mu$
+@xmath326;$-$
+@xmath327;$-$
+@xmath328;$-$
+@xmath329;$-$
+@xmath330;\begin{equation}
+T(\nu) = \sum_{i=1}^{n_{eig}} B_i(\nu) \hat{e_i} + \tilde{p}
+\end{equation}
+@xmath332;\begin{equation}
+\label{eqn:wb_toa}
+\chi^2 = \sum_{n,k} \frac{|d_{nk} - a_n t_{nk}e^{-2\pi i k \phi_n}|^2}{\sigma_n^2}.
+\end{equation}
+@xmath334;\begin{equation}
+\phi_n(\nu_n) = \phi_0 + \frac{K \times DM}{P_s} (\nu_n^{-2}-\nu_{\phi_0}^{-2}),
+\end{equation}
