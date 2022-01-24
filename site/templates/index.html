@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Résume Ton Doc</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>Résume Ton Doc</h1>
+    <h3>Grâce à nous, vous pourrez à présent en quelques lignes, résumer et comprendre des documents de plusieurs pages.</h3>
+
+    <form method="post" style="text-align: center">
+        <p>Insérez votre URL : <input type="text" name="URL" /></p>
+    </form>
+
+    <h3 style="text-align: center">
+        <button onclick='Resume()'>Résume moi ça</button>
+    </h3>
+
+    <h4 style="text-align: center">Résumé</h4>
+
+    <p id="text"></p>
+
+    <h3 style="text-align: center">
+        <button onclick=''>Load more</button>
+    </h3>
+</div>
+{% endblock %}
