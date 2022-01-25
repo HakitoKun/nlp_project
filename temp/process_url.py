@@ -6,7 +6,7 @@ from io import StringIO
 import csv
 import regex as re
 from urllib.parse import urlparse
-
+from transformers import TFAutoModelForSeq2SeqLM, AutoTokenizer
 
 def do_preprocessing(file):
     bashcommand = "pandoc test/" + file + " +RTS -M6000m -RTS --verbose --toc --trace --mathjax -f latex -t plain --template=template.plain --wrap=none -o test/" + file[
@@ -97,6 +97,20 @@ def my_function(file_name, n, m):
     nb_citation = m
     return file_name, nb_xmath, nb_citation
 
+
+def inference(text, length):
+    model = TFAutoModelForSeq2SeqLM.from_pretrained("../checkpoint-110000/", from_pt=True)
+    tokenizer = AutoTokenizer.from_pretrained("t5-base")
+
+    # T5 uses a max_length of 512 so we cut the article to 512 tokens.
+    inputs = tokenizer("summarize: " + text, return_tensors="tf", max_length=512)
+    outputs = model.generate(
+        inputs["input_ids"], max_length=length+10, min_length=length, length_penalty=2.0, num_beams=4, early_stopping=True
+    )
+
+    print(tokenizer.decode(outputs[0]))
+    return tokenizer.decode(outputs[0])
+
 def main(argv):
     pdf_url = argv[0]
     doc = process_url(pdf_url)
@@ -154,6 +168,7 @@ def main(argv):
         f.write("abstract, text\n")
         f.write('"' + abstract + '","' + text + '"')
 
+    inference(text, 50)
 
 
 
