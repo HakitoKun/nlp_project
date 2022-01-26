@@ -4,8 +4,11 @@ import process_url
 from flask import Flask, render_template, url_for, request, redirect
 from datetime import datetime
 
-app = Flask(__name__)
+from transformers import TFAutoModelForSeq2SeqLM, AutoTokenizer
 
+app = Flask(__name__)
+model = TFAutoModelForSeq2SeqLM.from_pretrained("../checkpoint-110000/", from_pt=True)
+tokenizer = AutoTokenizer.from_pretrained("t5-base")
 
 
 @app.route('/', methods=['POST', 'GET'])
@@ -16,7 +19,7 @@ def index():
 def process():
     url = request.form["param"]
     print(url)
-    toto = process_url.main(url)
+    toto = process_url.main(url, model, tokenizer)
     print(toto)
     return render_template('index.html')
 
