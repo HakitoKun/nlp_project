@@ -15,7 +15,29 @@
 
 <script>
 function Resume() {
-    document.getElementById("text").innerHTML = "Voici votre résumé";
+
+    var input = document.getElementById("in").value;
+    // Afficher la valeur
+    document.getElementById("text").innerHTML = postData(input);
 }
+
+function postData() {
+    var input = document.getElementById("in").value
+    $.ajax({
+        type: "POST",
+        url: "/process_url.py",
+        data: { "param": input },
+        success: callbackFunc
+    });
+
+
+}
+
+function callbackFunc(response) {
+    // do something with the response
+    console.log(response);
+}
+
+postData();
 </script>
 </html>
