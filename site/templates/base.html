@@ -27,15 +27,12 @@
             type: "POST",
             url: "/process_url.py",
             data: { "param": input },
-            success: function(response){
-                console.log(response);
-                var output = response;
-                document.getElementById("text").innerHTML = output
-                //var getvalue = output.startdate;
-                //var xxx = parseInt(getvalue);
-            }
+            datatype:'JSON',
+            success: function(data){
+                    $("#text").html(data.result);
+                }
         });
-        var input = document.getElementById("text").value;
+        // var input = document.getElementById("text").value;
 
 
 

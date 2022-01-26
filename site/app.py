@@ -1,7 +1,7 @@
 # CLIENT FRONT END APPLICATION 1 #
 import process_url
 
-from flask import Flask, render_template, url_for, request, redirect
+from flask import Flask, render_template, url_for, request, redirect, jsonify
 from datetime import datetime
 
 from transformers import TFAutoModelForSeq2SeqLM, AutoTokenizer
@@ -21,7 +21,8 @@ def process():
     print(url)
     toto = process_url.main(url, model, tokenizer)
     print(toto)
-    return render_template('index.html', resume=toto)
+    #return render_template('index.html', resume=toto)
+    return jsonify(result=toto)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000, debug=True)
