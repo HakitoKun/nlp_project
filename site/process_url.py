@@ -26,7 +26,7 @@ def do_preprocessing(file):
         print("error processing file : ", file, error)
     # return_code = process.wait()
     # print("return code : ", return_code)
-    return "test/" + file[:-4] + ".txt"
+    return "./test/" + file[:-4] + ".txt"
 
 
 def process_url(pdf_url):
@@ -149,77 +149,81 @@ def postprocesstext(text):
 
 
 def main(argv, model, tokenizer):
-    try:
-        if os.path.exists('./test'):
-            shutil.rmtree('./test', ignore_errors=True)
-        if os.path.isfile('conversion_xcite.txt'):
-            os.remove('conversion_xcite.txt')
-        if os.path.isfile('conversion_xmath.txt'):
-            os.remove('conversion_xmath.txt')
+    # try:
+    if os.path.exists('./test'):
+        shutil.rmtree('./test', ignore_errors=True)
+    if os.path.isfile('conversion_xcite.txt'):
+        os.remove('conversion_xcite.txt')
+    if os.path.isfile('conversion_xmath.txt'):
+        os.remove('conversion_xmath.txt')
 
-        os.makedirs("./test")
-        pdf_url = argv
-        doc = process_url(pdf_url)
-        # with libreq.urlopen('https://arxiv.org/e-print/2112.04484') as url:
-        with libreq.urlopen(doc) as url:
-            r = url.read()
-        # print(r)
-        with open("test/test.tar", "wb") as f:
-            f.write(r)
-        while not os.path.isfile('test/test.tar'):
-            time.sleep(0.1)
-        tar = tarfile.open("test/test.tar")
-        tar.extractall("test/")
-        tar.close()
-        abstract = ""
-        text = ""
-        tex_files = []
-        for file in os.listdir("test"):
-            if file.endswith(".tex"):
-                tex_files.append(file)
+    os.makedirs("./test")
+    pdf_url = argv
+    doc = process_url(pdf_url)
+    # with libreq.urlopen('https://arxiv.org/e-print/2112.04484') as url:
+    with libreq.urlopen(doc) as url:
+        r = url.read()
+    # print(r)
+    with open("test/test.tar", "wb") as f:
+        f.write(r)
+    while not os.path.isfile('test/test.tar'):
+        time.sleep(0.1)
+    tar = tarfile.open("test/test.tar")
+    tar.extractall("test/")
+    tar.close()
+    abstract = ""
+    text = ""
+    tex_files = []
+    for file in os.listdir("test"):
+        if file.endswith(".tex"):
+            tex_files.append(file)
 
-        print(tex_files)
-        for file in tex_files:
-            create_balise(file)
+    #print(tex_files)
+    for file in tex_files:
+        create_balise(file)
 
-        list_txt = []
+    list_txt = []
 
-        n, m = 0, 0
-        for file in tex_files:
-            f, n, m = my_function('test/' + file, n, m)
+    n, m = 0, 0
+    for file in tex_files:
+        f, n, m = my_function('test/' + file, n, m)
 
-        for file in tex_files:
-            list_txt.append(do_preprocessing(file))
+    for file in tex_files:
+        list_txt.append(do_preprocessing(file))
 
-        for file in list_txt:
-            with open(file, 'r') as f:
-                lines = f.readlines()
-            body_flag = False
-            for line in lines:
-                if not len(line.strip()):
-                    continue
-                if line.startswith('BODY'):
-                    body_flag = True
-                    continue
-                if body_flag:
-                    text += line
-                elif line.startswith('ABSTRACT'):
-                    continue
-                else:
-                    abstract += line
-        print("body :", text)
-        print("abstract : ", abstract)
-        text = text.replace("\"", "'")
-        abstract = abstract.replace("\"", "'")
-        with open("output.txt", 'w+') as f:
-            f.write("abstract, text\n")
-            f.write('"' + abstract + '","' + text + '"')
+    #print("ls ",os.getcwd(), os.listdir())
 
-        model_text = inference(text, 200, model, tokenizer)
-        print("real abstract : ", abstract)
-        return postprocesstext(model_text)
-    except:
-        return "could not process pdf"
+    for file in list_txt:
+        with open(file, 'r') as f:
+            lines = f.readlines()
+        body_flag = False
+        for line in lines:
+            if not len(line.strip()):
+                continue
+            if line.startswith('BODY'):
+                body_flag = True
+                continue
+            if body_flag:
+                text += line
+            elif line.startswith('ABSTRACT'):
+                continue
+            else:
+                abstract += line
+    #print("body :", text)
+    #print("abstract : ", abstract)
+    text = text.replace("\"", "'")
+    abstract = abstract.replace("\"", "'")
+    with open("output.txt", 'w+') as f:
+        f.write("abstract, text\n")
+        f.write('"' + abstract + '","' + text + '"')
+
+    model_text = inference(text, 200, model, tokenizer)
+    print("real abstract : ", abstract)
+    res = postprocesstext(model_text)
+    print("resultat : ",res)
+    return res
+    # except:
+    #     return "could not process pdf"
 
 
 if __name__ == '__main__':

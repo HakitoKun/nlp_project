@@ -10,34 +10,43 @@
     {% block head %}{% endblock %}
 </head>
 <body>
-    {% block body %}{% endblock %}
+{% block body %}{% endblock %}
 </body>
 
 <script>
-function Resume() {
+    function Resume() {
 
-    var input = document.getElementById("in").value;
-    // Afficher la valeur
-    document.getElementById("text").innerHTML = postData(input);
-}
+        var input = document.getElementById("in").value;
+        // Afficher la valeur
+        document.getElementById("text").innerHTML = postData(input);
+    }
 
-function postData() {
-    var input = document.getElementById("in").value
-    $.ajax({
-        type: "POST",
-        url: "/process_url.py",
-        data: { "param": input },
-        success: callbackFunc
-    });
+    function postData() {
+        var input = document.getElementById("in").value
+        $.ajax({
+            type: "POST",
+            url: "/process_url.py",
+            data: { "param": input },
+            success: function(response){
+                console.log(response);
+                var output = response;
+                document.getElementById("text").innerHTML = output
+                //var getvalue = output.startdate;
+                //var xxx = parseInt(getvalue);
+            }
+        });
+        var input = document.getElementById("text").value;
 
 
-}
 
-function callbackFunc(response) {
-    // do something with the response
-    console.log(response);
-}
+    }
 
-postData();
+    // function callbackFunc(response) {
+    //     // do something with the response
+    //     console.log(response);
+    //     document.getElementById("text").innerHTML =
+    // }
+
+    postData();
 </script>
 </html>

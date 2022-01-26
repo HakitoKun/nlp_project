@@ -21,7 +21,7 @@ def process():
     print(url)
     toto = process_url.main(url, model, tokenizer)
     print(toto)
-    return render_template('index.html')
+    return render_template('index.html', resume=toto)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000, debug=True)
