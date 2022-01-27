@@ -14,15 +14,16 @@
     </form>
 
     <h3 style="text-align: center">
-        <button onclick='postData()'>Résume moi ça</button>
+        <button onclick="postData();$('#loading').show();">Résume moi ça</button>
     </h3>
+    <div id="loading" style="display:none;"><img src="static/loading.gif" alt="" width="50" height="50"/>Loading!</div>
 
     <h4 style="text-align: center">Résumé</h4>
 
     <p id="text"> {{resume}} </p>
 
     <h3 style="text-align: center">
-        <button onclick=''>Load more</button>
+        <button onclick="postData2();$('#loading').show();">Load more</button>
     </h3>
 </div>
 {% endblock %}

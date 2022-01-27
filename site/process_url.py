@@ -14,8 +14,11 @@ from transformers import TFAutoModelForSeq2SeqLM, AutoTokenizer
 
 
 def do_preprocessing(file):
-    bashcommand = "pandoc test/" + file + " +RTS -M6000m -RTS --verbose --toc --trace --mathjax -f latex -t plain --template=template.plain --wrap=none -o test/" + file[
-                                                                                                                                                                    :-4] + ".txt"
+    # bashcommand = "pandoc test/" + file + " +RTS -M6000m -RTS --verbose --toc --trace --mathjax -f latex -t plain --template=template.plain --wrap=none -o test/" + file[
+    #                                                                                                                                                                 :-4] + ".txt"
+    bashcommand = "pandoc test/" + file + " +RTS -M6000m -RTS --toc  --mathjax -f latex -t plain --template=template.plain --wrap=none -o test/" + file[
+                                                                                                                                                   :-4] + ".txt"
+
     # Ajouter les balises --verbose et --trace pour avoir un output console
     process = subprocess.Popen(bashcommand.split(), stdout=subprocess.PIPE)
     output, error = process.communicate()
@@ -82,7 +85,7 @@ def my_function(file_name, n, m):
     mapping_cite = test.findall(lines)
 
     for i in range(len(mapping_cite)):
-        mapping_cite[i] = "\'@xcite" + str(i + n) + "\':\'" + mapping_cite[i].replace(":"," ") + "\'"
+        mapping_cite[i] = "\'@xcite" + str(i + n) + "\':\'" + mapping_cite[i].replace(":", " ") + "\'"
 
     f = open("conversion_xcite.txt", "a")
     for i in mapping_cite:
@@ -104,27 +107,42 @@ def my_function(file_name, n, m):
 
 
 def inference(text, length, model, tokenizer):
+    t1 = time.time()
     if model is None:
         model = TFAutoModelForSeq2SeqLM.from_pretrained("./checkpoint-110000/", from_pt=True)
     if tokenizer is None:
         tokenizer = AutoTokenizer.from_pretrained("t5-base")
     # T5 uses a max_length of 512 so we cut the article to 512 tokens.
+    t2 = time.time()
+    print("encoding input")
     inputs = tokenizer("summarize: " + text, return_tensors="tf", max_length=512)
+    print("done in : ", time.time() - t2)
+    print("generating outputs")
+    t3 = time.time()
     outputs = model.generate(
         inputs["input_ids"], max_length=length + 10, min_length=length, length_penalty=2.0, num_beams=4,
         early_stopping=True
     )
     print("out : ", outputs)
-
+    print("done in : ", time.time() - t3)
+    print("decoding : ")
+    t4 = time.time()
     print(tokenizer.decode(outputs[0]))
+    print("done in : ", time.time() - t4)
+    print("inference speed : ", time.time() - t1)
     return tokenizer.decode(outputs[0])
 
 
 def postprocesstext(text):
     all_text = text.split()
-    xcite_dict = pd.read_csv('conversion_xcite.txt', sep=":", quotechar="'", header=None)
-
-    xmath_dict = pd.read_csv('conversion_xmath.txt', sep=":", quotechar="'", header=None)
+    try:
+        xcite_dict = pd.read_csv('conversion_xcite.txt', sep=":", quotechar="'", header=None)
+    except:
+        pass
+    try:
+        xmath_dict = pd.read_csv('conversion_xmath.txt', sep=":", quotechar="'", header=None)
+    except:
+        pass
     res = []
     for t in all_text:
         if t.startswith("@xcite"):
@@ -148,7 +166,7 @@ def postprocesstext(text):
     return post_process_text
 
 
-def main(argv, model, tokenizer):
+def main(argv, model, tokenizer, length):
     # try:
     if os.path.exists('./test'):
         shutil.rmtree('./test', ignore_errors=True)
@@ -178,7 +196,7 @@ def main(argv, model, tokenizer):
         if file.endswith(".tex"):
             tex_files.append(file)
 
-    #print(tex_files)
+    # print(tex_files)
     for file in tex_files:
         create_balise(file)
 
@@ -191,7 +209,7 @@ def main(argv, model, tokenizer):
     for file in tex_files:
         list_txt.append(do_preprocessing(file))
 
-    #print("ls ",os.getcwd(), os.listdir())
+    # print("ls ",os.getcwd(), os.listdir())
 
     for file in list_txt:
         with open(file, 'r') as f:
@@ -209,18 +227,18 @@ def main(argv, model, tokenizer):
                 continue
             else:
                 abstract += line
-    #print("body :", text)
-    #print("abstract : ", abstract)
+    # print("body :", text)
+    # print("abstract : ", abstract)
     text = text.replace("\"", "'")
     abstract = abstract.replace("\"", "'")
     with open("output.txt", 'w+') as f:
         f.write("abstract, text\n")
         f.write('"' + abstract + '","' + text + '"')
 
-    model_text = inference(text, 200, model, tokenizer)
+    model_text = inference(text, length, model, tokenizer)
     print("real abstract : ", abstract)
     res = postprocesstext(model_text)
-    print("resultat : ",res)
+    print("resultat : ", res)
     return res
     # except:
     #     return "could not process pdf"
@@ -229,7 +247,7 @@ def main(argv, model, tokenizer):
 if __name__ == '__main__':
     r = main(sys.argv[1:][0], None, None)
     # main('https://arxiv.org/pdf/2201.09907.pdf')
-    print("created abstrat : ",r)
+    print("created abstrat : ", r)
 
 # python process_url.py https://arxiv.org/pdf/2201.09907.pdf
 # python process_url.py https://arxiv.org/pdf/2201.08862.pdf

@@ -14,6 +14,7 @@
 </body>
 
 <script>
+    var count = 1;
     function Resume() {
 
         var input = document.getElementById("in").value;
@@ -26,17 +27,32 @@
         $.ajax({
             type: "POST",
             url: "/process_url.py",
-            data: { "param": input },
+            data: { "param": input, "length":30 },
             datatype:'JSON',
             success: function(data){
                     $("#text").html(data.result);
+                    document.getElementById("loading").style.display = "none";
                 }
         });
         // var input = document.getElementById("text").value;
-
-
-
     }
+
+        function postData2() {
+        count++;
+        var input = document.getElementById("in").value
+        $.ajax({
+            type: "POST",
+            url: "/process_url.py",
+            data: { "param": input, "length":count*30 },
+            datatype:'JSON',
+            success: function(data){
+                    $("#text").html(data.result);
+                    document.getElementById("loading").style.display = "none";
+                }
+        });
+        // var input = document.getElementById("text").value;
+    }
+
 
     // function callbackFunc(response) {
     //     // do something with the response
