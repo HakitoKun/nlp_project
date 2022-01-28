@@ -1,0 +1,507 @@
+'@xmath0':'$\fnsymbol{footnote}$'
+'@xmath1':'$F$'
+'@xmath2':'$T$'
+'@xmath3':'$\hbar=c=\kB=1$'
+'@xmath4':'$F= -T \ln Z$'
+'@xmath5':'$Z$'
+'@xmath6':'$p$'
+'@xmath7':'$Z$'
+'@xmath8':'$\phi^4$'
+'@xmath9':'$\phi$'
+'@xmath10':'$\eta$'
+'@xmath11':'$H$'
+'@xmath12':'$\eta$'
+'@xmath13':'$\etafin$'
+'@xmath14':'$\etain$'
+'@xmath15':'$W$'
+'@xmath16':'$T$'
+'@xmath17':'$\etain$'
+'@xmath18':'$\etain$'
+'@xmath19':'$\etafin$'
+'@xmath20':'$[\tin, \tfin]$'
+'@xmath21':'$\eta(t)$'
+'@xmath22':'$\eta(t)$'
+'@xmath23':'$t>\tin$'
+'@xmath24':'$t$'
+'@xmath25':'$\eta$'
+'@xmath26':'$t$'
+'@xmath27':'$W$'
+'@xmath28':'$\eta_i = \eta(t_i)$'
+'@xmath29':'$\eta(t)$'
+'@xmath30':'$\overline{\exp \left( -W/T \right)}$'
+'@xmath31':'$\eta$'
+'@xmath32':'$\eta$'
+'@xmath33':'$Z_{\etafin}/Z_{\etain}$'
+'@xmath34':'$[\tin, \tfin]$'
+'@xmath35':'$\eta$'
+'@xmath36':'$\exp(-\Delta F/T)$'
+'@xmath37':'$\etain$'
+'@xmath38':'$\etafin$'
+'@xmath39':'$\phi_1$'
+'@xmath40':'$Z_{\etafin}$'
+'@xmath41':'$Z_{\etain}$'
+'@xmath42':'$Z_{\etain}$'
+'@xmath43':'$\phi_0$'
+'@xmath44':'$\exp\left( -\left\{H_{\etafin}\left[\phi_0\right] - H_{\etain}\left[\phi_0\right]\right\}/T\right)$'
+'@xmath45':'$\mathcal{P}_{\mbox{\tiny{f}}}(W)$'
+'@xmath46':'$W$'
+'@xmath47':'$\mathcal{P}_{\mbox{\tiny{r}}}(-W)$'
+'@xmath48':'$-W$'
+'@xmath49':'$\mathcal{P}_{\mbox{\tiny{r}}}(-W)$'
+'@xmath50':'$W$'
+'@xmath51':'$\Delta F$'
+'@xmath52':'$W$'
+'@xmath53':'$\mathcal{P}_{\mbox{\tiny{f}}}(W)$'
+'@xmath54':'$\mathcal{P}_{\mbox{\tiny{r}}}(-W)$'
+'@xmath55':'$H[\phi]/T$'
+'@xmath56':'$S[\phi]$'
+'@xmath57':'$W/T$'
+'@xmath58':'$\eta(t)$'
+'@xmath59':'$\etain \to \etafin$'
+'@xmath60':'$P_{\mbox{\tiny{f}}}$'
+'@xmath61':'$\phi_0 \to \phi_1 \to \dots \to \phi_N$'
+'@xmath62':'$p_{\etain}(\phi_0) = e^{-S_{\etain}(\phi_0)}/Z_{\etain}$'
+'@xmath63':'$\phi_0$'
+'@xmath64':'$P_{\mbox{\tiny{f}}}$'
+'@xmath65':'$\eta(t)$'
+'@xmath66':'$\mathcal{O}$'
+'@xmath67':'$\eta = \etafin$'
+'@xmath68':'$q_0$'
+'@xmath69':'$p$'
+'@xmath70':'$0 \le n \le N$'
+'@xmath71':'$z$'
+'@xmath72':'$g_\theta$'
+'@xmath73':'$y_{n+1}=g_n(y_n)$'
+'@xmath74':'$J_n$'
+'@xmath75':'$n$'
+'@xmath76':'$n+1$'
+'@xmath77':'$q_0$'
+'@xmath78':'$p(\phi)$'
+'@xmath79':'$\langle \dots \rangle_{q_N}$'
+'@xmath80':'$q_N$'
+'@xmath81':'$\mathcal{O}$'
+'@xmath82':'$\mathcal{O}$'
+'@xmath83':'$q_N$'
+'@xmath84':'$g_\theta$'
+'@xmath85':'$y_0$'
+'@xmath86':'$q_0[y_0] = \exp\left(-S_0[y_0]\right)/Z_0$'
+'@xmath87':'$Q$'
+'@xmath88':'$Q$'
+'@xmath89':'$q_N(\phi)$'
+'@xmath90':'$q_N(\phi)$'
+'@xmath91':'$p(\phi)$'
+'@xmath92':'$S_{\etain} $'
+'@xmath93':'$S_0$'
+'@xmath94':'$y_0$'
+'@xmath95':'$(y_0,y_1,\dots,y_t)$'
+'@xmath96':'$t\le N$'
+'@xmath97':'$y_t$'
+'@xmath98':'$t$'
+'@xmath99':'$y_0$'
+'@xmath100':'$q_0$'
+'@xmath101':'$(y_N,y_{N-1},\dots,y_0)$'
+'@xmath102':'$Q$'
+'@xmath103':'$y_0$'
+'@xmath104':'$Q$'
+'@xmath105':'$y_n$'
+'@xmath106':'$0 \le n \le N$'
+'@xmath107':'$n$'
+'@xmath108':'$g_n(y_n)$'
+'@xmath109':'$n$'
+'@xmath110':'$P_{\mbox{\tiny{f}}}[y_0,y_1,\dots, y_N]$'
+'@xmath111':'$\DKL(q_N|p)$'
+'@xmath112':'$\eta(t)$'
+'@xmath113':'$\eta(t)$'
+'@xmath114':'$\eta$'
+'@xmath115':'$n$'
+'@xmath116':'$P(\phi \to \phi^\prime)$'
+'@xmath117':'$\tilde{w}$'
+'@xmath118':'$w$'
+'@xmath119':'$(y_0,y_1,\dots , y_N)$'
+'@xmath120':'$\phi^4$'
+'@xmath121':'$\phi^4$'
+'@xmath122':'$\Lambda$'
+'@xmath123':'$L_t \times L_s$'
+'@xmath124':'$a$'
+'@xmath125':'$N_t=L_t/a$'
+'@xmath126':'$N_s=L_s/a$'
+'@xmath127':'$Z$'
+'@xmath128':'$z$'
+'@xmath129':'$\sigma=0.5$'
+'@xmath130':'$\kappa=0$'
+'@xmath131':'$\lambda=0$'
+'@xmath132':'$q_0(z)$'
+'@xmath133':'$p(\phi)$'
+'@xmath134':'$f= F/L_s = F / (aN_s)$'
+'@xmath135':'$g_i$'
+'@xmath136':'$g_i$'
+'@xmath137':'$y^{i+1} = g_i(y^{i})$'
+'@xmath138':'$\mbox{A} = \mbox{even}$'
+'@xmath139':'$\mbox{B} = \mbox{odd}$'
+'@xmath140':'$s$'
+'@xmath141':'$t$'
+'@xmath142':'$p(\phi)$'
+'@xmath143':'$\phi \to -\phi$'
+'@xmath144':'$\mathbb{Z}_2$'
+'@xmath145':'$g_\theta$'
+'@xmath146':'$z$'
+'@xmath147':'$s$'
+'@xmath148':'$t$'
+'@xmath149':'$s$'
+'@xmath150':'$q_N (\phi)$'
+'@xmath151':'$z \to -z$'
+'@xmath152':'$N_s \times N_t$'
+'@xmath153':'$3\times 3$'
+'@xmath154':'$n$'
+'@xmath155':'$\eta_n=\eta(t_n)$'
+'@xmath156':'$S_{\eta_n}$'
+'@xmath157':'$\phi^4$'
+'@xmath158':'$\eta(t)$'
+'@xmath159':'$\kappa=0$'
+'@xmath160':'$\lambda=0$'
+'@xmath161':'$\kappa$'
+'@xmath162':'$\lambda$'
+'@xmath163':'$\nab$'
+'@xmath164':'$\nsb$'
+'@xmath165':'$\nab \neq 0$'
+'@xmath166':'$\nsb \neq 0$'
+'@xmath167':'$\nab = 2 \nsb$'
+'@xmath168':'$-\langle \ln \tilde{w} \rangle_{\mbox{\tiny{f}}}$'
+'@xmath169':'$Z/Z_0$'
+'@xmath170':'$q_N(\phi)$'
+'@xmath171':'$p(\phi)$'
+'@xmath172':'$[0,1]$'
+'@xmath173':'$1$'
+'@xmath174':'$10^4$'
+'@xmath175':'$8000$'
+'@xmath176':'$\nmeas=2\times 10^5$'
+'@xmath177':'$\nab$'
+'@xmath178':'$\nsb$'
+'@xmath179':'$16\times8$'
+'@xmath180':'$\kappa=0.2$'
+'@xmath181':'$\lambda=0.022$'
+'@xmath182':'$\nab=0$'
+'@xmath183':'$\nsb=0$'
+'@xmath184':'$a^2 f$'
+'@xmath185':'$2 \times 10^5$'
+'@xmath186':'$16\times8$'
+'@xmath187':'$64 \times 8$'
+'@xmath188':'$\kappa=0.2$'
+'@xmath189':'$\lambda=0.022$'
+'@xmath190':'$\nmeas$'
+'@xmath191':'$\nsb$'
+'@xmath192':'$\eta(t)$'
+'@xmath193':'$\nmeas$'
+'@xmath194':'$q_N(\phi)$'
+'@xmath195':'$p(\phi)$'
+'@xmath196':'$\nsb$'
+'@xmath197':'$\Delta f$'
+'@xmath198':'$16\times8$'
+'@xmath199':'$64 \times 8$'
+'@xmath200':'$f$'
+'@xmath201':'$\nsb$'
+'@xmath202':'$100$'
+'@xmath203':'$\nab$'
+'@xmath204':'$\nsb$'
+'@xmath205':'$16\times8$'
+'@xmath206':'$\kappa=0.2$'
+'@xmath207':'$\lambda=0.022$'
+'@xmath208':'$\nab$'
+'@xmath209':'$p(\phi)$'
+'@xmath210':'$\nsb=0$'
+'@xmath211':'$\nsb$'
+'@xmath212':'$\nab>6$'
+'@xmath213':'$\nab$'
+'@xmath214':'$\nsb$'
+'@xmath215':'$\nab>6$'
+'@xmath216':'$\nab$'
+'@xmath217':'$\nab = \nsb$'
+'@xmath218':'$\nab$'
+'@xmath219':'$N_s \times 8$'
+'@xmath220':'$\kappa=0.2$'
+'@xmath221':'$\lambda=0.022$'
+'@xmath222':'$a N_s$'
+'@xmath223':'$\nsb$'
+'@xmath224':'$s$'
+'@xmath225':'$t$'
+'@xmath226':'$\nab \geq 6$'
+'@xmath227':'$\nab$'
+'@xmath228':'$f$'
+'@xmath229':'$\nab$'
+'@xmath230':'$\nmeas=2\times 10^5$'
+'@xmath231':'$\nsb > 100$'
+'@xmath232':'$N_t = 8$'
+'@xmath233':'$\nab=24$'
+'@xmath234':'$\nsb$'
+'@xmath235':'$\kappa=0.2$'
+'@xmath236':'$\lambda=0.022$'
+'@xmath237':'$N_s \times 8$'
+'@xmath238':'$\nsb=\nab$'
+'@xmath239':'$\kappa=0.2$'
+'@xmath240':'$\lambda=0.022$'
+'@xmath241':'$p(\phi)$'
+'@xmath242':'$\nsb$'
+'@xmath243':'$\nab = \nsb$'
+'@xmath244':'$\nab = \nsb = 0$'
+'@xmath245':'$\nsb > 0$'
+'@xmath246':'$\nab = \nsb = 24$'
+'@xmath247':'$\nsb$'
+'@xmath248':'$\nab$'
+'@xmath249':'$\nab=\nsb$'
+'@xmath250':'$\Delta f$'
+'@xmath251':'$N_s \times 8$'
+'@xmath252':'$16 \times 8$'
+'@xmath253':'$\kappa=0.2$'
+'@xmath254':'$\lambda=0.022$'
+'@xmath255':'$\nmeas = 2 \times 10^5$'
+'@xmath256':'$p(\phi)$'
+'@xmath257':'$N_s=16$'
+'@xmath258':'$\nsb$'
+'@xmath259':'$\nab=24$'
+'@xmath260':'$\nsb=300$'
+'@xmath261':'$N_s = 32$'
+'@xmath262':'$48$'
+'@xmath263':'$N_s=64$'
+'@xmath264':'$\nsb=500$'
+'@xmath265':'$\nsb=24$'
+'@xmath266':'$\nab=24$'
+'@xmath267':'$\nsb$'
+'@xmath268':'$F$'
+'@xmath269':'$Z$'
+'@xmath270':'$\SU(3)$'
+'@xmath271':'$3+1$'
+'@xmath272':'$\beta$'
+'@xmath273':'$\beta_0$'
+'@xmath274':'$\eta(t)$'
+'@xmath275':'$T$'
+'@xmath276':'$\phi$'
+'@xmath277':'$\pi$'
+'@xmath278':'$Z$'
+'@xmath279':'$F$'
+'@xmath280':'$P[\phi\to\phi^\prime]$'
+'@xmath281':'$\phi$'
+'@xmath282':'$\phi^\prime$'
+'@xmath283':'$\phi$'
+'@xmath284':'$\phi^\prime$'
+'@xmath285':'$\phi^\prime$'
+'@xmath286':'$\tin$'
+'@xmath287':'$\tfin$'
+'@xmath288':'$\tfin-\tin$'
+'@xmath289':'$\Delta t$'
+'@xmath290':'$N$'
+'@xmath291':'$\tau=\Delta t /N$'
+'@xmath292':'$t_n=\tin + n \tau$'
+'@xmath293':'$0 \le n \le N$'
+'@xmath294':'$t_n$'
+'@xmath295':'$\mathcal{R}_N[\phi]$'
+'@xmath296':'$T$'
+'@xmath297':'$\tau$'
+'@xmath298':'$\eta_n$'
+'@xmath299':'$\eta_{n+1}$'
+'@xmath300':'$N \to \infty$'
+'@xmath301':'$\mathcal{R}_N[\phi]$'
+'@xmath302':'$\mathcal{R}_N[\phi]$'
+'@xmath303':'$\tin$'
+'@xmath304':'$\tfin$'
+'@xmath305':'$t=\tin$'
+'@xmath306':'$N+1$'
+'@xmath307':'$\tin$'
+'@xmath308':'$t_1$'
+'@xmath309':'$t_2$'
+'@xmath310':'$\dots$'
+'@xmath311':'$t_{N-1}$'
+'@xmath312':'$\tfin$'
+'@xmath313':'$Z_{\etafin}/Z_{\etain}$'
+'@xmath314':'$\pi_{\etafin}\left[ \phi_N \right]/\pi_{\etain}\left[ \phi_0 \right]$'
+'@xmath315':'$\pi_{\etain}\left[ \phi_0 \right]$'
+'@xmath316':'$\phi_0$'
+'@xmath317':'$P_{\eta_1}\left[ \phi_1 \to \phi_0\right]$'
+'@xmath318':'$1$'
+'@xmath319':'$\phi_1$'
+'@xmath320':'$\phi_2$'
+'@xmath321':'$\dots$'
+'@xmath322':'$\phi_{N-1}$'
+'@xmath323':'$\pi_{\etafin}\left[ \phi_N \right]$'
+'@xmath324':'$1$'
+'@xmath325':'$\tin \le t \le \tfin$'
+'@xmath326':'$\exp(-H/T)$'
+'@xmath327':'$\phi_n$'
+'@xmath328':'$t > \tin$'
+'@xmath329':'$T$'
+'@xmath330':'\begin{equation}\label{#1}}
+\newcommand{\en}{\end{equation}'
+'@xmath332':'\begin{equation}
+\label{Jarzynski_equality}
+\frac{Z_{\etafin}}{Z_{\etain}} = \overline{\exp \left( -W/T \right)}.
+\end{equation}'
+'@xmath334':'\begin{equation}
+ W = \sum_{n=0}^{N-1} \left\{ H_{\eta_{n+1}}\left[\phi_n\right] - H_{\eta_n}\left[\phi_n\right] \right\}
+\end{equation}'
+'@xmath336':'\begin{equation}
+\label{reweighting}
+\overline{\exp \left( -W/T \right)} = \lim_{\tau \to 0} \sum_{\phi_0} \sum_{\phi_1}\pi_{\etain}\left[ \phi_0 \right] \exp \left( -\frac{H_{\etafin}\left[\phi_0\right] - H_{\etain}\left[\phi_0\right]}{T}\right) P_{\etafin}\left[ \phi_0 \to \phi_1 \right].
+\end{equation}'
+'@xmath338':'\begin{equation}
+\label{reweighting_bis}
+\overline{\exp \left( -W/T \right)} = \lim_{\tau \to 0} \sum_{\phi_0} \pi_{\etain}\left[ \phi_0 \right] \exp\left( -\frac{H_{\etafin}\left[\phi_0\right] - H_{\etain}\left[\phi_0\right]}{T}\right).
+\end{equation}'
+'@xmath340':'\begin{equation}
+\label{Crooks_theorem}
+\frac{\mathcal{P}_{\mbox{\tiny{f}}}(W)}{\mathcal{P}_{\mbox{\tiny{r}}}(-W)} = \exp \left( - \frac{\Delta F - W}{T} \right) .
+\end{equation}'
+'@xmath342':'\begin{equation}
+\label{eq:Q_stochastic}
+ Q(\phi_0,\phi_1,\dots , \phi_N) = \sum_{n=0}^{N-1} \left\{ S_{\eta_{n+1}} \left[\phi_{n+1}\right] - S_{\eta_n+1}\left[\phi_n\right] \right\}
+\end{equation}'
+'@xmath344':'\begin{equation}
+\label{eq:expectation_value_0}
+\langle \mathcal{O} \rangle_{\eta=\etafin} = \frac{\langle \mathcal{O}(\phi_N) \exp(-w(\phi_0,\phi_1,\dots , \phi_N)) \rangle_{\mbox{\tiny{f}}}}{\langle \exp(-w(\phi_0,\phi_1,\dots , \phi_N)) \rangle_{\mbox{\tiny{f}}}},
+\end{equation}'
+'@xmath346':'\begin{equation}
+\label{eq:norm_flow}
+g_\theta (z) = (g_N \circ \cdots \circ g_1 \circ g_0 )(z).
+\end{equation}'
+'@xmath348':'\begin{equation}
+\label{eq:intermediate_dist}
+q_{n+1}(y_{n+1})=q_n \left( g_n (y_n) \right) = q_n (y_n )\left| \det J_n (y_n )\right|^{-1},
+\end{equation}'
+'@xmath350':'\begin{equation}
+\label{deterministic_Kullback-Leibler_divergence}
+\DKL(q_N|p) = \int \dd \phi \, q_N(\phi) \left[ \ln q_N(\phi) - \ln p(\phi)\right].
+\end{equation}'
+'@xmath352':'\begin{equation}
+\label{eq:tilde_w}
+\tilde{w}(\phi)=\frac{\exp(-S[\phi])}{Z_0 q_N(\phi)},
+\end{equation}'
+'@xmath354':'\begin{equation}
+\label{eq:Z_neural}
+Z = Z_0 \int \dd \phi \, q_N(\phi) \tilde{w}(\phi) = Z_0 \langle \tilde{w}(\phi) \rangle_{\phi \sim q_N},
+\end{equation}'
+'@xmath356':'\begin{equation}
+\label{expectation_value}
+\langle \mathcal{O} \rangle = \frac{1}{Z} \int \dd \phi \, q_N(\phi) \mathcal{O}(\phi) \tilde{w}(\phi) = \frac{\langle \mathcal{O}(\phi) \tilde{w}(\phi) \rangle_{\phi \sim q_N}}{\langle \tilde{w}(\phi) \rangle_{\phi \sim q_N}}.
+\end{equation}'
+'@xmath358':'\begin{equation}
+\label{eq:Q_deterministic}
+Q=\sum_{n=0}^{N-1} \ln \left| \det J_n (y_n) \right| .
+\end{equation}'
+'@xmath360':'\begin{equation}
+\label{eq:Z_neural_2}
+ \frac{Z}{Z_0} = \langle \exp \left( - \left\{ S[g_\theta(y_0)] - S_0[y_0] - Q \right\} \right) \rangle_{y_0 \sim q_0}.
+\end{equation}'
+'@xmath362':'\begin{equation}
+P_{\mbox{\tiny{f}}}[y_0,y_1,\dots,y_t]=\prod_{n=0}^{t-1} P[y_n \to y_{n+1}],
+\end{equation}'
+'@xmath364':'\begin{equation}
+\label{reach_yn_in_stochastic_normalizing_flow}
+q_t(y_t)=\int \dd y_0  \, \dd y_1 \dots \dd y_{t-1} \, q(y_0) P_{\mbox{\tiny{f}}}[y_0,y_1,\dots,y_t].
+\end{equation}'
+'@xmath366':'\begin{equation}
+P_{\mbox{\tiny{r}}}[y_N,y_{N-1},\dots,y_0]=\prod_{n=0}^{N-1} P[y_{N-n} \to y_{N-n-1}],
+\end{equation}'
+'@xmath368':'\begin{equation}
+\label{eq:Q_general_definition}
+Q(y_0, y_1, \dots y_N) = \ln \frac{P_{\mbox{\tiny{r}}}[y_N,y_{N-1},\dots,y_0]}{P_{\mbox{\tiny{f}}}[y_0,y_1,\dots,y_N]} =\sum_{n=0}^{N-1} \left( \ln P[y_{n+1} \to y_n] -\ln P[y_n \to y_{n+1}] \right).
+\end{equation}'
+'@xmath370':'\begin{equation}
+\label{eq:Z_final}
+\frac{Z}{Z_0} = \langle \tilde{w}(y_0,y_1,\dots, y_N) \rangle_{\mbox{\tiny{f}}}.
+\end{equation}'
+'@xmath372':'\begin{equation}
+P[y_n \to y_{n+1}]=\delta\left(y_{n+1}-g_n(y_n)\right)
+\end{equation}'
+'@xmath374':'\begin{equation}
+\label{Bayes_theorem}
+q_n(y_n)P[y_n \to y_{n+1}] = q_{n+1}(y_{n+1})P[y_{n+1} \to y_n],
+\end{equation}'
+'@xmath376':'\begin{equation}
+\sum_{n=0}^{N-1} \ln \left[ q_n(y_n)/q_{n+1}(y_{n+1})\right] =\sum_{n=0}^{N-1} \ln \left| \det J_n (y_n) \right|,
+\end{equation}'
+'@xmath378':'\begin{equation}
+\label{Boltzmann_distribution_for_lambda_n}
+\pi_n[\phi] = \pi_{\eta_n}[\phi] = \frac{1}{Z_{\eta_n}} \exp \left( - S_{\eta_n}[\phi]\right)
+\end{equation}'
+'@xmath380':'\begin{equation}
+\label{detailed_balance_for_lambda_n}
+\frac{P[\phi\to\phi^\prime]}{P[\phi^\prime \to \phi]} = \frac{\pi_{n+1}[\phi^\prime]}{\pi_{n+1}[\phi]}.
+\end{equation}'
+'@xmath382':'\begin{equation}
+Q(y_0, y_1, \dots y_N) = \sum_{n=0}^{N-1} \ln \frac{\pi_{n+1}[y_n]}{\pi_{n+1}[y_{n+1}]},
+\end{equation}'
+'@xmath384':'\begin{equation}
+\label{eq:tilde_w_stochastic}
+\tilde{w}(y_0,y_1,\dots , y_N) = \exp \left( - \sum_{n=0}^{N-1} S_{\eta_{n+1}}[y_n]-S_{\eta_{n}}[y_n] \right) = \exp \left( -w(y_0,y_1,\dots , y_N) \right),
+\end{equation}'
+'@xmath386':'\begin{equation}
+\label{eq:phi4_action}
+ S(\phi) = \sum_{x \in \Lambda} - 2 \kappa \sum_{\mu=0,1} \phi(x)\phi(x+\hat{\mu}) + (1 - 2\lambda) \phi(x)^2 + \lambda \phi(x)^4
+\end{equation}'
+'@xmath388':'\begin{equation}
+ p(\phi) = \frac{1}{Z} e^{-S(\phi)},
+\end{equation}'
+'@xmath390':'\begin{equation}
+ Z = \int \prod_{x \in \Lambda} \dd \phi(x) e^{-S(\phi)}.
+\end{equation}'
+'@xmath392':'\begin{equation}
+ q_0(z) =  \left (\frac{1}{\sqrt{2 \pi \sigma^2}} \right)^{\left| \Lambda \right|} e^{-S_0(z)}
+\end{equation}'
+'@xmath394':'\begin{equation}
+\label{eq:gauss_action}
+ S_0(z) = \sum_{x \in \Lambda} \frac{z(x)^2}{2 \sigma^2}.
+\end{equation}'
+'@xmath396':'\begin{equation}
+F = - T \ln Z = - \frac{1}{N_t a} \ln Z
+\end{equation}'
+'@xmath398':'\begin{equation}
+a^2 f = - \frac{\ln Z}{N_t N_s}.
+\end{equation}'
+'@xmath400':'\begin{equation}
+\mbox{Var}_{\mbox{\tiny{f}}} (\mathcal{L}) = \mbox{Var}_{\mbox{\tiny{f}}} (-\ln \tilde{w}), 
+\end{equation}'
+'@xmath402':'\begin{equation}
+ \label{eq:ESS}
+\mbox{ESS} = \frac{\langle \tilde{w}\rangle_{\mbox{\tiny{f}}}^2}{\langle \tilde{w}^2 \rangle_{\mbox{\tiny{f}}}}
+\end{equation}'
+'@xmath404':'\begin{equation}
+\label{Boltzmann_distribution}
+\pi[\phi] = \frac{1}{Z} \exp \left( - H[\phi]/T \right).
+\end{equation}'
+'@xmath406':'\begin{equation}
+\label{partition_function_and_free_energy}
+Z = \exp \left( - F/T \right).
+\end{equation}'
+'@xmath408':'\begin{equation}
+\label{Boltzmann_distribution_stationarity}
+\sum_\phi \pi[\phi] P[\phi\to\phi^\prime] = \sum_\phi \pi[\phi^\prime] P[\phi^\prime \to \phi].
+\end{equation}'
+'@xmath410':'\begin{equation}
+\label{detailed_balance}
+\pi[\phi] P[\phi\to\phi^\prime] = \pi[\phi^\prime] P[\phi^\prime \to \phi],
+\end{equation}'
+'@xmath412':'\begin{equation}
+\label{discretized_exponential_work}
+\mathcal{R}_N[\phi] = \exp \left( - \frac{1}{T}\sum_{n=0}^{N-1} \left\{ H_{\eta_{n+1}}\left[\phi_n\right] - H_{\eta_n}\left[\phi_n\right] \right\}\right),
+\end{equation}'
+'@xmath414':'\begin{equation}
+\label{discretized_exponential_work_Z_pi_ratios}
+\mathcal{R}_N[\phi] = \prod_{n=0}^{N-1} \frac{Z_{\eta_{n+1}} \pi_{\eta_{n+1}}\left[\phi_n \right]}{Z_{\eta_n} \pi_{\eta_n}\left[\phi_n \right]},
+\end{equation}'
+'@xmath416':'\begin{equation}
+\label{averaged_discretized_exponential_work_Z_pi_ratios}
+\overline{\exp \left( -W/T \right)} = \lim_{N \to \infty} \sum_{\left\{ \phi_n \right\}_{n=0}^N }\pi_{\etain}\left[ \phi_0 \right] \prod_{n=0}^{N-1} \left\{ \frac{Z_{\eta_{n+1}}}{Z_{\eta_n}} \cdot \frac{\pi_{\eta_{n+1}}\left[\phi_n\right]}{\pi_{\eta_n}\left[\phi_n\right]} \cdot P_{\eta_{n+1}}\left[ \phi_n \to \phi_{n+1} \right] \right\},
+\end{equation}'
+'@xmath418':'\begin{equation}
+\sum_{\left\{ \phi_n \right\}_{n=0}^N } = \sum_{\phi_0} \sum_{\phi_1}  \sum_{\phi_2} \dots \sum_{\phi_{N-1}} \sum_{\phi_N}.
+\end{equation}'
+'@xmath420':'\begin{equation}
+\label{simplified_discretized_exponential_work_pi_ratios}
+\overline{\exp \left( -W/T \right)} = \frac{Z_{\etafin}}{Z_{\etain}} \lim_{N \to \infty} \sum_{\left\{ \phi_n \right\}_{n=0}^N }\pi_{\etain}\left[ \phi_0 \right] \prod_{n=0}^{N-1} \left\{\frac{\pi_{\eta_{n+1}}\left[\phi_{n+1}\right]}{\pi_{\eta_n}\left[\phi_n\right]} \cdot P_{\eta_{n+1}}\left[ \phi_{n+1} \to \phi_n \right] \right\}.
+\end{equation}'
+'@xmath422':'\begin{equation}
+\label{discretized_exponential_P_product}
+\overline{\exp \left( -W/T \right)} = \frac{Z_{\etafin}}{Z_{\etain}}  \lim_{N \to \infty} \sum_{\left\{ \phi_n \right\}_{n=0}^N }\pi_{\etafin}\left[ \phi_N \right] \prod_{n=0}^{N-1} P_{\eta_{n+1}}\left[ \phi_{n+1} \to \phi_n \right].
+\end{equation}'
+'@xmath424':'\begin{equation}
+\label{final_discretized_exponential_P_product}
+\overline{\exp \left( -W/T \right)} = \frac{Z_{\etafin}}{Z_{\etain}},
+\end{equation}'

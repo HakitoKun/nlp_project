@@ -1,0 +1,614 @@
+
+\providecommand{\href}[2]{#2}\begingroup\begin{thebibliography}{10}
+
+\bibitem{Schwarz:2003du}
+D.~J. Schwarz, \emph{{The first second of the universe}},
+  \href{http://dx.doi.org/10.1002/andp.200310010}{\emph{Annalen Phys.}
+  {\bfseries 12} (2003) 220--270},
+  [\href{https://arxiv.org/abs/astro-ph/0303574}{{\ttfamily
+  astro-ph/0303574}}].
+
+\bibitem{Caprini:2019egz}
+C.~Caprini et~al., \emph{{Detecting gravitational waves from cosmological phase
+  transitions with LISA: an update}},
+  \href{http://dx.doi.org/10.1088/1475-7516/2020/03/024}{\emph{JCAP} {\bfseries
+  03} (2020) 024}, [\href{https://arxiv.org/abs/1910.13125}{{\ttfamily
+  1910.13125}}].
+
+\bibitem{Kajantie:1996mn}
+K.~Kajantie, M.~Laine, K.~Rummukainen and M.~E. Shaposhnikov, \emph{{Is there a
+  hot electroweak phase transition at m(H) larger or equal to m(W)?}},
+  \href{http://dx.doi.org/10.1103/PhysRevLett.77.2887}{\emph{Phys. Rev. Lett.}
+  {\bfseries 77} (1996) 2887--2890},
+  [\href{https://arxiv.org/abs/hep-ph/9605288}{{\ttfamily hep-ph/9605288}}].
+
+\bibitem{Kajantie:1995kf}
+K.~Kajantie, M.~Laine, K.~Rummukainen and M.~E. Shaposhnikov, \emph{{The
+  Electroweak phase transition: A Nonperturbative analysis}},
+  \href{http://dx.doi.org/10.1016/0550-3213(96)00052-1}{\emph{Nucl. Phys. B}
+  {\bfseries 466} (1996) 189--258},
+  [\href{https://arxiv.org/abs/hep-lat/9510020}{{\ttfamily hep-lat/9510020}}].
+
+\bibitem{Aoki:2006we}
+Y.~Aoki, G.~Endr{\H{o}}di, Z.~Fodor, S.~D. Katz and K.~K. Szab{\'o}, \emph{{The
+  Order of the quantum chromodynamics transition predicted by the standard
+  model of particle physics}},
+  \href{http://dx.doi.org/10.1038/nature05120}{\emph{Nature} {\bfseries 443}
+  (2006) 675--678}, [\href{https://arxiv.org/abs/hep-lat/0611014}{{\ttfamily
+  hep-lat/0611014}}].
+
+\bibitem{Bazavov:2011nk}
+A.~Bazavov, T.~Bhattacharya, M.~Cheng, C.~DeTar, H.~Ding et~al., \emph{{The
+  chiral and deconfinement aspects of the QCD transition}},
+  \href{http://dx.doi.org/10.1103/PhysRevD.85.054503}{\emph{Phys. Rev.}
+  {\bfseries D85} (2012) 054503},
+  [\href{https://arxiv.org/abs/1111.1710}{{\ttfamily 1111.1710}}].
+
+\bibitem{Witten:1984rs}
+E.~Witten, \emph{{Cosmic Separation of Phases}},
+  \href{http://dx.doi.org/10.1103/PhysRevD.30.272}{\emph{Phys. Rev. D}
+  {\bfseries 30} (1984) 272--285}.
+
+\bibitem{Hogan:1986qda}
+C.~J. Hogan, \emph{{Gravitational radiation from cosmological phase
+  transitions}}, {\emph{Mon. Not. Roy. Astron. Soc.} {\bfseries 218} (1986)
+  629--636}.
+
+\bibitem{Kosowsky:1992rz}
+A.~Kosowsky, M.~S. Turner and R.~Watkins, \emph{{Gravitational waves from first
+  order cosmological phase transitions}},
+  \href{http://dx.doi.org/10.1103/PhysRevLett.69.2026}{\emph{Phys. Rev. Lett.}
+  {\bfseries 69} (1992) 2026--2029}.
+
+\bibitem{Wilson:1974sk}
+K.~G. Wilson, \emph{{Confinement of Quarks}},
+  \href{http://dx.doi.org/10.1103/PhysRevD.10.2445}{\emph{Phys. Rev.}
+  {\bfseries D10} (1974) 2445--2459}.
+
+\bibitem{Engels:1990vr}
+J.~Engels, J.~Fingberg, F.~Karsch, D.~Miller and M.~Weber,
+  \emph{{Nonperturbative thermodynamics of SU(N) gauge theories}},
+  \href{http://dx.doi.org/10.1016/0370-2693(90)90496-S}{\emph{Phys. Lett.}
+  {\bfseries B252} (1990) 625--630}.
+
+\bibitem{Ferrenberg:1988yz}
+A.~M. Ferrenberg and R.~H. Swendsen, \emph{{New Monte Carlo Technique for
+  Studying Phase Transitions}},
+  \href{http://dx.doi.org/10.1103/PhysRevLett.61.2635}{\emph{Phys. Rev. Lett.}
+  {\bfseries 61} (1988) 2635--2638}.
+
+\bibitem{Langfeld:2012ah}
+K.~Langfeld, B.~Lucini and A.~Rago, \emph{{The density of states in gauge
+  theories}},
+  \href{http://dx.doi.org/10.1103/PhysRevLett.109.111601}{\emph{Phys. Rev.
+  Lett.} {\bfseries 109} (2012) 111601},
+  [\href{https://arxiv.org/abs/1204.3243}{{\ttfamily 1204.3243}}].
+
+\bibitem{Asakawa:2013laa}
+{\scshape FlowQCD} collaboration, M.~Asakawa, T.~Hatsuda, E.~Itou, M.~Kitazawa
+  and H.~Suzuki, \emph{{Thermodynamics of SU(3) gauge theory from gradient flow
+  on the lattice}}, \href{http://dx.doi.org/10.1103/PhysRevD.90.011501,
+  10.1103/PhysRevD.92.059902}{\emph{Phys. Rev.} {\bfseries D90} (2014) 011501},
+  [\href{https://arxiv.org/abs/1312.7492}{{\ttfamily 1312.7492}}]. [Erratum:
+  Phys. Rev. {\bf D92}, no.5, 059902 (2015)].
+
+\bibitem{Langfeld:2014nta}
+K.~Langfeld and B.~Lucini, \emph{{Density of states approach to dense quantum
+  systems}}, \href{http://dx.doi.org/10.1103/PhysRevD.90.094502}{\emph{Phys.
+  Rev.} {\bfseries D90} (2014) 094502},
+  [\href{https://arxiv.org/abs/1404.7187}{{\ttfamily 1404.7187}}].
+
+\bibitem{Kitazawa:2016dsl}
+M.~Kitazawa, T.~Iritani, M.~Asakawa, T.~Hatsuda and H.~Suzuki, \emph{{Equation
+  of State for SU(3) Gauge Theory via the Energy-Momentum Tensor under Gradient
+  Flow}}, \href{http://dx.doi.org/10.1103/PhysRevD.94.114512}{\emph{Phys. Rev.}
+  {\bfseries D94} (2016) 114512},
+  [\href{https://arxiv.org/abs/1610.07810}{{\ttfamily 1610.07810}}].
+
+\bibitem{Giusti:2016iqr}
+L.~Giusti and M.~Pepe, \emph{{Equation of state of the SU($3$) Yang-Mills
+  theory: a precise determination from a moving frame}},
+  \href{http://dx.doi.org/10.1016/j.physletb.2017.04.001}{\emph{Phys. Lett.}
+  {\bfseries B769} (2017) 385--390},
+  [\href{https://arxiv.org/abs/1612.00265}{{\ttfamily 1612.00265}}].
+
+\bibitem{Kanaya:2016rkt}
+K.~Kanaya, S.~Ejiri, R.~Iwami, M.~Kitazawa, H.~Suzuki, Y.~Taniguchi et~al.,
+  \emph{{Equation of state in (2+1)-flavor QCD with gradient flow}},
+  {\emph{PoS} {\bfseries Lattice 2016} (2016) 063},
+  [\href{https://arxiv.org/abs/1610.09518}{{\ttfamily 1610.09518}}].
+
+\bibitem{DallaBrida:2017sxr}
+M.~Dalla~Brida, L.~Giusti and M.~Pepe, \emph{{QCD in a moving frame: an
+  exploratory study}},
+  \href{http://dx.doi.org/10.1051/epjconf/201817514012}{\emph{EPJ Web Conf.}
+  {\bfseries 175} (2018) 14012},
+  [\href{https://arxiv.org/abs/1710.09219}{{\ttfamily 1710.09219}}].
+
+\bibitem{Hirakida:2018uoy}
+T.~Hirakida, E.~Itou and H.~Kouno, \emph{{Thermodynamics for pure SU($2$) gauge
+  theory using gradient flow}},
+  \href{https://arxiv.org/abs/1805.07106}{{\ttfamily 1805.07106}}.
+
+\bibitem{Iritani:2018idk}
+T.~Iritani, M.~Kitazawa, H.~Suzuki and H.~Takaura, \emph{{Thermodynamics in
+  quenched QCD: energy-momentum tensor with two-loop order coefficients in the
+  gradient-flow formalism}},
+  \href{http://dx.doi.org/10.1093/ptep/ptz001}{\emph{PTEP} {\bfseries 2019}
+  (02, 2019) 023B02}, [\href{https://arxiv.org/abs/1812.06444}{{\ttfamily
+  1812.06444}}].
+
+\bibitem{Chatelain:2006pdo}
+C.~Chatelain and D.~Karevski, \emph{{Probability distributions of the work in
+  the two-dimensional Ising model}}, {\emph{Journal of Statistical Mechanics:
+  Theory and Experiment} {\bfseries 2006} (2006) P06005},
+  [\href{https://arxiv.org/abs/cond-mat/0602580}{{\ttfamily
+  cond-mat/0602580}}].
+
+\bibitem{Chatelain:2007ts}
+C.~Chatelain, \emph{{Temperature-extended Jarzynski relation: Application to
+  the numerical calculation of the surface tension}},
+  \href{http://dx.doi.org/10.1088/1742-5468/2007/04/P04011}{\emph{J. Stat.
+  Mech.: Theor. Exp.} {\bfseries 0704} (2007) P04011},
+  [\href{https://arxiv.org/abs/cond-mat/0702044}{{\ttfamily
+  cond-mat/0702044}}].
+
+\bibitem{Hijar:2007new}
+H.~H\'{\i}jar, J.~Quintana-H. and G.~Sutmann, \emph{{Non-equilibrium work
+  theorems for the two-dimensional Ising model}}, {\emph{Journal of Statistical
+  Mechanics: Theory and Experiment} {\bfseries 2007} (2007) P04010}.
+
+\bibitem{Caselle:2016wsw}
+M.~Caselle, G.~Costagliola, A.~Nada, M.~Panero and A.~Toniato,
+  \emph{{Jarzynski's theorem for lattice gauge theory}},
+  \href{http://dx.doi.org/10.1103/PhysRevD.94.034503}{\emph{Phys. Rev.}
+  {\bfseries D94} (2016) 034503},
+  [\href{https://arxiv.org/abs/1604.05544}{{\ttfamily 1604.05544}}].
+
+\bibitem{Caselle:2018kap}
+M.~Caselle, A.~Nada and M.~Panero, \emph{{QCD thermodynamics from lattice
+  calculations with non-equilibrium methods: The SU(3) equation of state}},
+  \href{http://dx.doi.org/10.1103/PhysRevD.98.054513}{\emph{Phys. Rev.}
+  {\bfseries D98} (2018) 054513},
+  [\href{https://arxiv.org/abs/1801.03110}{{\ttfamily 1801.03110}}].
+
+\bibitem{Francesconi:2020fgi}
+O.~Francesconi, M.~Panero and D.~Preti, \emph{{Strong coupling from
+  non-equilibrium Monte~Carlo simulations}},
+  \href{http://dx.doi.org/10.1007/JHEP07(2020)233}{\emph{JHEP} {\bfseries 07}
+  (2020) 233}, [\href{https://arxiv.org/abs/2003.13734}{{\ttfamily
+  2003.13734}}].
+
+\bibitem{Jarzynski:1996oqb}
+C.~Jarzynski, \emph{{Nonequilibrium Equality for Free Energy Differences}},
+  \href{http://dx.doi.org/10.1103/PhysRevLett.78.2690}{\emph{Phys. Rev. Lett.}
+  {\bfseries 78} (1997) 2690--2693},
+  [\href{https://arxiv.org/abs/cond-mat/9610209}{{\ttfamily
+  cond-mat/9610209}}].
+
+\bibitem{Jarzynski:1997ef}
+C.~Jarzynski, \emph{{Equilibrium free-energy differences from nonequilibrium
+  measurements: A master-equation approach}},
+  \href{http://dx.doi.org/10.1103/PhysRevE.56.5018}{\emph{Phys. Rev.}
+  {\bfseries E56} (1997) 5018--5035},
+  [\href{https://arxiv.org/abs/cond-mat/9707325}{{\ttfamily
+  cond-mat/9707325}}].
+
+\bibitem{Evans:1993po}
+D.~J. Evans, E.~G.~D. Cohen and G.~P. Morriss, \emph{{Probability of second law
+  violations in shearing steady states}},
+  \href{http://dx.doi.org/10.1103/PhysRevLett.71.2401}{\emph{Phys. Rev. Lett.}
+  {\bfseries 71} (1993) 2401--2404}.
+
+\bibitem{Evans:1993em}
+D.~J. Evans and D.~J. Searles, \emph{{Equilibrium microstates which generate
+  second law violating steady states}},
+  \href{http://dx.doi.org/10.1103/PhysRevE.50.1645}{\emph{Phys. Rev.}
+  {\bfseries E50} (1994) 1645--1648}.
+
+\bibitem{Gallavotti:1994de}
+G.~Gallavotti and E.~G.~D. Cohen, \emph{Dynamical ensembles in nonequilibrium
+  statistical mechanics},
+  \href{http://dx.doi.org/10.1103/PhysRevLett.74.2694}{\emph{Phys. Rev. Lett.}
+  {\bfseries 74} (1995) 2694--2697},
+  [\href{https://arxiv.org/abs/chao-dyn/9410007}{{\ttfamily
+  chao-dyn/9410007}}].
+
+\bibitem{Gallavotti:1995de}
+G.~Gallavotti and E.~G.~D. Cohen, \emph{Dynamical ensembles in stationary
+  states}, \href{http://dx.doi.org/10.1007/BF02179860}{\emph{J. Stat. Phys.}
+  {\bfseries 80} (1995) 931--970},
+  [\href{https://arxiv.org/abs/chao-dyn/9501015}{{\ttfamily
+  chao-dyn/9501015}}].
+
+\bibitem{Crooks:1997ne}
+G.~E. Crooks, \emph{{Nonequilibrium Measurements of Free Energy Differences for
+  Microscopically Reversible Markovian Systems}},
+  \href{http://dx.doi.org/10.1023/A:1023208217925}{\emph{J. Stat. Phys.}
+  {\bfseries 90} (1998) 1481--1487}.
+
+\bibitem{Crooks:1999ep}
+G.~E. Crooks, \emph{{Entropy production fluctuation theorem and the
+  nonequilibrium work relation for free energy differences}},
+  \href{http://dx.doi.org/10.1103/PhysRevE.60.2721}{\emph{Phys. Rev.}
+  {\bfseries E60} (1999) 2721--2726},
+  [\href{https://arxiv.org/abs/cond-mat/9901352}{{\ttfamily
+  cond-mat/9901352}}].
+
+\bibitem{Ritort:2004wf}
+F.~Ritort, \emph{{Work fluctuations, transient violations of the second law and
+  free-energy recovery methods: Perspectives in Theory and Experiments}},
+  {\emph{Poincar{\'e} Seminar} {\bfseries 2} (2003) 195--229},
+  [\href{https://arxiv.org/abs/cond-mat/0401311}{{\ttfamily
+  cond-mat/0401311}}].
+
+\bibitem{MariniBettoloMarconi:2008fd}
+U.~Marini~Bettolo~Marconi, A.~Puglisi, L.~Rondoni and A.~Vulpiani,
+  \emph{{Fluctuation dissipation: Response theory in statistical physics}},
+  \href{http://dx.doi.org/10.1016/j.physrep.2008.02.002}{\emph{Phys. Rept.}
+  {\bfseries 461} (2008) 111--195},
+  [\href{https://arxiv.org/abs/0803.0719}{{\ttfamily 0803.0719}}].
+
+\bibitem{Bochkov:1977gt}
+G.~N. Bochkov and Y.~E. Kuzovlev, \emph{{General theory of thermal fluctuations
+  in nonlinear systems}}, {\emph{Sov. Phys. JETP} {\bfseries 45} (1977)
+  125--130}.
+
+\bibitem{Bochkov:1979fd}
+G.~N. Bochkov and Y.~E. Kuzovlev, \emph{{Fluctuation-dissipation relations for
+  non-equilibrium processes in open systems}}, {\emph{Sov. Phys. JETP}
+  {\bfseries 49} (1979) 543}.
+
+\bibitem{Bochkov:1981nf}
+G.~N. Bochkov and Y.~E. Kuzovlev, \emph{{Nonlinear fluctuation-dissipation
+  relations and stochastic models in nonequilibrium thermodynamics}},
+  \href{http://dx.doi.org/{10.1016/0378-4371(81)90122-9}}{\emph{Physica A:
+  Statistical Mechanics and its Applications} {\bfseries 106} (1981) 443--479}.
+
+\bibitem{Jarzynski:2006cof}
+C.~Jarzynski, \emph{{Comparison of far-from-equilibrium work relations}},
+  \href{http://dx.doi.org/{10.1016/j.crhy.2007.04.010}}{\emph{Comptes Rendus
+  Physique} {\bfseries 8} (2007) 495--506},
+  [\href{https://arxiv.org/abs/cond-mat/0612305}{{\ttfamily
+  cond-mat/0612305}}].
+
+\bibitem{Kuzovlev:2011sr}
+Y.~Kuzovlev, \emph{{Short remarks on the so-called fluctuation theorems and
+  related statements}},  \href{https://arxiv.org/abs/1106.0589}{{\ttfamily
+  1106.0589}}.
+
+\bibitem{Esposito:2009zz}
+M.~Esposito, U.~Harbola and S.~Mukamel, \emph{{Nonequilibrium fluctuations,
+  fluctuation theorems, and counting statistics in quantum systems}},
+  \href{http://dx.doi.org/10.1103/RevModPhys.81.1665}{\emph{Rev. Mod. Phys.}
+  {\bfseries 81} (2009) 1665--1702},
+  [\href{https://arxiv.org/abs/0811.3717}{{\ttfamily 0811.3717}}].
+
+\bibitem{DAlessio:2016rwt}
+L.~D'Alessio, Y.~Kafri, A.~Polkovnikov and M.~Rigol, \emph{{From quantum chaos
+  and eigenstate thermalization to statistical mechanics and thermodynamics}},
+  \href{http://dx.doi.org/10.1080/00018732.2016.1198134}{\emph{Adv. Phys.}
+  {\bfseries 65} (2016) 239--362},
+  [\href{https://arxiv.org/abs/1509.06411}{{\ttfamily 1509.06411}}].
+
+\bibitem{Campisi:2016qlj}
+M.~Campisi and J.~Goold, \emph{{Thermodynamics of quantum information
+  scrambling}}, \href{http://dx.doi.org/10.1103/PhysRevE.95.062127}{\emph{Phys.
+  Rev. E} {\bfseries 95} (2017) 062127},
+  [\href{https://arxiv.org/abs/1609.05848}{{\ttfamily 1609.05848}}].
+
+\bibitem{Halpern:2016zcm}
+N.~Yunger~Halpern, \emph{{Jarzynski-like equality for the out-of-time-ordered
+  correlator}}, \href{http://dx.doi.org/10.1103/PhysRevA.95.012120}{\emph{Phys.
+  Rev. A} {\bfseries 95} (2017) 012120},
+  [\href{https://arxiv.org/abs/1609.00015}{{\ttfamily 1609.00015}}].
+
+\bibitem{Halpern:2017abm}
+N.~Yunger~Halpern, B.~Swingle and J.~Dressel, \emph{{Quasiprobability behind
+  the out-of-time-ordered correlator}},
+  \href{http://dx.doi.org/10.1103/PhysRevA.97.042105}{\emph{Phys. Rev. A}
+  {\bfseries 97} (2018) 042105},
+  [\href{https://arxiv.org/abs/1704.01971}{{\ttfamily 1704.01971}}].
+
+\bibitem{Mori:2018qjb}
+T.~Mori, T.~N. Ikeda, E.~Kaminishi and M.~Ueda, \emph{{Thermalization and
+  prethermalization in isolated quantum systems: a theoretical overview}},
+  \href{http://dx.doi.org/10.1088/1361-6455/aabcdf}{\emph{J. Phys. B}
+  {\bfseries 51} (2018) 112001},
+  [\href{https://arxiv.org/abs/1712.08790}{{\ttfamily 1712.08790}}].
+
+\bibitem{Chenu:2018spm}
+A.~Chenu, J.~Molina-Vilaplana and A.~Del~Campo, \emph{{Work Statistics,
+  Loschmidt Echo and Information Scrambling in Chaotic Quantum Systems}},
+  \href{http://dx.doi.org/10.22331/q-2019-03-04-127}{\emph{Quantum} {\bfseries
+  3} (2019) 127}, [\href{https://arxiv.org/abs/1804.09188}{{\ttfamily
+  1804.09188}}].
+
+\bibitem{Jensen:1906sl}
+J.~L. W.~V. Jensen, \emph{{Sur les fonctions convexes et les in{\'e}galit{\'e}s
+  entre les valeurs moyennes}},
+  \href{http://dx.doi.org/10.1007/BF02418571}{\emph{Acta Math.} {\bfseries 30}
+  (1906) 175--193}.
+
+\bibitem{Carleo:2019ptp}
+G.~Carleo, I.~Cirac, K.~Cranmer, L.~Daudet, M.~Schuld, N.~Tishby et~al.,
+  \emph{{Machine learning and the physical sciences}},
+  \href{http://dx.doi.org/10.1103/RevModPhys.91.045002}{\emph{Rev. Mod. Phys.}
+  {\bfseries 91} (2019) 045002},
+  [\href{https://arxiv.org/abs/1903.10563}{{\ttfamily 1903.10563}}].
+
+\bibitem{Guest:2018yhq}
+D.~Guest, K.~Cranmer and D.~Whiteson, \emph{{Deep Learning and its Application
+  to LHC Physics}},
+  \href{http://dx.doi.org/10.1146/annurev-nucl-101917-021019}{\emph{Ann. Rev.
+  Nucl. Part. Sci.} {\bfseries 68} (2018) 161--181},
+  [\href{https://arxiv.org/abs/1806.11484}{{\ttfamily 1806.11484}}].
+
+\bibitem{Radovic:2018dip}
+A.~Radovic, M.~Williams, D.~Rousseau, M.~Kagan, D.~Bonacorsi, A.~Himmel et~al.,
+  \emph{{Machine learning at the energy and intensity frontiers of particle
+  physics}}, \href{http://dx.doi.org/10.1038/s41586-018-0361-2}{\emph{Nature}
+  {\bfseries 560} (2018) 41--48}.
+
+\bibitem{Schwartz:2021ftp}
+M.~D. Schwartz, \emph{{Modern Machine Learning and Particle Physics}},
+  \href{https://arxiv.org/abs/2103.12226}{{\ttfamily 2103.12226}}.
+
+\bibitem{Denby:1987rk}
+B.~H. Denby, \emph{{Neural Networks and Cellular Automata in Experimental
+  High-energy Physics}},
+  \href{http://dx.doi.org/10.1016/0010-4655(88)90004-5}{\emph{Comput. Phys.
+  Commun.} {\bfseries 49} (1988) 429--448}.
+
+\bibitem{Lonnblad:1990qp}
+L.~L{\"o}nnblad, C.~Peterson and T.~R{\"o}gnvaldsson, \emph{{Using neural
+  networks to identify jets}},
+  \href{http://dx.doi.org/10.1016/0550-3213(91)90392-B}{\emph{Nucl. Phys. B}
+  {\bfseries 349} (1991) 675--702}.
+
+\bibitem{Denby:1992jd}
+B.~H. Denby, \emph{{The Use of neural networks in high-energy physics}},
+  \href{http://dx.doi.org/10.1162/neco.1993.5.4.505}{\emph{Neural Comput.}
+  {\bfseries 5} (1993) 505--542}.
+
+\bibitem{Mankel:2004yv}
+R.~Mankel, \emph{{Pattern recognition and event reconstruction in particle
+  physics experiments}},
+  \href{http://dx.doi.org/10.1088/0034-4885/67/4/R03}{\emph{Rept. Prog. Phys.}
+  {\bfseries 67} (2004) 553},
+  [\href{https://arxiv.org/abs/physics/0402039}{{\ttfamily physics/0402039}}].
+
+\bibitem{Aad:2014yva}
+{\scshape ATLAS} collaboration, G.~Aad et~al., \emph{{A neural network
+  clustering algorithm for the ATLAS silicon pixel detector}},
+  \href{http://dx.doi.org/10.1088/1748-0221/9/09/P09009}{\emph{JINST}
+  {\bfseries 9} (2014) P09009},
+  [\href{https://arxiv.org/abs/1406.7690}{{\ttfamily 1406.7690}}].
+
+\bibitem{Ball:2014uwa}
+{\scshape NNPDF} collaboration, R.~D. Ball et~al., \emph{{Parton distributions
+  for the LHC Run II}},
+  \href{http://dx.doi.org/10.1007/JHEP04(2015)040}{\emph{JHEP} {\bfseries 04}
+  (2015) 040}, [\href{https://arxiv.org/abs/1410.8849}{{\ttfamily 1410.8849}}].
+
+\bibitem{Barnard:2016qma}
+J.~Barnard, E.~N. Dawe, M.~J. Dolan and N.~Rajcic, \emph{{Parton Shower
+  Uncertainties in Jet Substructure Analyses with Deep Neural Networks}},
+  \href{http://dx.doi.org/10.1103/PhysRevD.95.014018}{\emph{Phys. Rev. D}
+  {\bfseries 95} (2017) 014018},
+  [\href{https://arxiv.org/abs/1609.00607}{{\ttfamily 1609.00607}}].
+
+\bibitem{Louppe:2017ipp}
+G.~Louppe, K.~Cho, C.~Becot and K.~Cranmer, \emph{{QCD-Aware Recursive Neural
+  Networks for Jet Physics}},
+  \href{http://dx.doi.org/10.1007/JHEP01(2019)057}{\emph{JHEP} {\bfseries 01}
+  (2019) 057}, [\href{https://arxiv.org/abs/1702.00748}{{\ttfamily
+  1702.00748}}].
+
+\bibitem{Wetzel:2017ooo}
+S.~J. Wetzel and M.~Scherzer, \emph{{Machine Learning of Explicit Order
+  Parameters: From the Ising Model to SU(2) Lattice Gauge Theory}},
+  \href{http://dx.doi.org/10.1103/PhysRevB.96.184410}{\emph{Phys. Rev. B}
+  {\bfseries 96} (2017) 184410},
+  [\href{https://arxiv.org/abs/1705.05582}{{\ttfamily 1705.05582}}].
+
+\bibitem{Zhou:2018ill}
+K.~Zhou, G.~Endr{\H{o}}di, L.-G. Pang and H.~St{\"o}cker, \emph{{Regressive and
+  generative neural networks for scalar field theory}},
+  \href{http://dx.doi.org/10.1103/PhysRevD.100.011501}{\emph{Phys. Rev. D}
+  {\bfseries 100} (2019) 011501},
+  [\href{https://arxiv.org/abs/1810.12879}{{\ttfamily 1810.12879}}].
+
+\bibitem{Shanahan:2018vcv}
+P.~E. Shanahan, D.~Trewartha and W.~Detmold, \emph{{Machine learning action
+  parameters in lattice quantum chromodynamics}},
+  \href{http://dx.doi.org/10.1103/PhysRevD.97.094506}{\emph{Phys. Rev. D}
+  {\bfseries 97} (2018) 094506},
+  [\href{https://arxiv.org/abs/1801.05784}{{\ttfamily 1801.05784}}].
+
+\bibitem{Urban:2018tqv}
+J.~M. Pawlowski and J.~M. Urban, \emph{{Reducing Autocorrelation Times in
+  Lattice Simulations with Generative Adversarial Networks}},
+  \href{http://dx.doi.org/10.1088/2632-2153/abae73}{\emph{Mach. Learn. Sci.
+  Tech.} {\bfseries 1} (2020) 045011},
+  [\href{https://arxiv.org/abs/1811.03533}{{\ttfamily 1811.03533}}].
+
+\bibitem{Yoon:2018krb}
+B.~Yoon, T.~Bhattacharya and R.~Gupta, \emph{{Machine Learning Estimators for
+  Lattice QCD Observables}},
+  \href{http://dx.doi.org/10.1103/PhysRevD.100.014504}{\emph{Phys. Rev. D}
+  {\bfseries 100} (2019) 014504},
+  [\href{https://arxiv.org/abs/1807.05971}{{\ttfamily 1807.05971}}].
+
+\bibitem{Giannetti:2018vif}
+C.~Giannetti, B.~Lucini and D.~Vadacchino, \emph{{Machine Learning as a
+  universal tool for quantitative investigations of phase transitions}},
+  \href{http://dx.doi.org/10.1016/j.nuclphysb.2019.114639}{\emph{Nucl. Phys. B}
+  {\bfseries 944} (2019) 114639},
+  [\href{https://arxiv.org/abs/1812.06726}{{\ttfamily 1812.06726}}].
+
+\bibitem{Matsumoto:2019jia}
+T.~Matsumoto, M.~Kitazawa and Y.~Kohno, \emph{{Classifying topological charge
+  in SU(3) Yang\textendash{}Mills theory with machine learning}},
+  \href{http://dx.doi.org/10.1093/ptep/ptaa138}{\emph{PTEP} {\bfseries 2021}
+  (2021) 023D01}, [\href{https://arxiv.org/abs/1909.06238}{{\ttfamily
+  1909.06238}}].
+
+\bibitem{Chernodub:2020nip}
+M.~N. Chernodub, H.~Erbin, V.~A. Goy and A.~V. Molochkov, \emph{{Topological
+  defects and confinement with machine learning: the case of monopoles in
+  compact electrodynamics}},
+  \href{http://dx.doi.org/10.1103/PhysRevD.102.054501}{\emph{Phys. Rev. D}
+  {\bfseries 102} (2020) 054501},
+  [\href{https://arxiv.org/abs/2006.09113}{{\ttfamily 2006.09113}}].
+
+\bibitem{Bluecher:2020kxq}
+S.~Bl{\"u}cher, L.~Kades, J.~M. Pawlowski, N.~Strodthoff and J.~M. Urban,
+  \emph{{Towards novel insights in lattice field theory with explainable
+  machine learning}},
+  \href{http://dx.doi.org/10.1103/PhysRevD.101.094507}{\emph{Phys. Rev. D}
+  {\bfseries 101} (2020) 094507},
+  [\href{https://arxiv.org/abs/2003.01504}{{\ttfamily 2003.01504}}].
+
+\bibitem{Favoni:2020reg}
+M.~Favoni, A.~Ipp, D.~I. M{\"u}ller and D.~Schuh, \emph{{Lattice gauge
+  equivariant convolutional neural networks}},
+  \href{https://arxiv.org/abs/2012.12901}{{\ttfamily 2012.12901}}.
+
+\bibitem{Boyda:2020nfh}
+D.~L. Boyda, M.~N. Chernodub, N.~V. Gerasimeniuk, V.~A. Goy, S.~D. Liubimov and
+  A.~V. Molochkov, \emph{{Finding the deconfinement temperature in lattice
+  Yang-Mills theories from outside the scaling window with machine learning}},
+  \href{http://dx.doi.org/10.1103/PhysRevD.103.014509}{\emph{Phys. Rev. D}
+  {\bfseries 103} (2021) 014509},
+  [\href{https://arxiv.org/abs/2009.10971}{{\ttfamily 2009.10971}}].
+
+\bibitem{Medvidovic:2020vum}
+M.~Medvidovic, J.~Carrasquilla, L.~E. Hayward and B.~Kulchytskyy,
+  \emph{{Generative models for sampling of lattice field theories}},  in
+  \emph{{34th Conference on Neural Information Processing Systems}}, 12, 2020,
+  \href{https://arxiv.org/abs/2012.01442}{{\ttfamily 2012.01442}}.
+
+\bibitem{Bachtis:2021xoh}
+D.~Bachtis, G.~Aarts and B.~Lucini, \emph{{Quantum field-theoretic machine
+  learning}}, \href{http://dx.doi.org/10.1103/PhysRevD.103.074510}{\emph{Phys.
+  Rev. D} {\bfseries 103} (2021) 074510},
+  [\href{https://arxiv.org/abs/2102.09449}{{\ttfamily 2102.09449}}].
+
+\bibitem{Gabrie:2021tlu}
+M.~Gabri{\'e}, G.~M. Rotskoff and E.~Vanden-Eijnden, \emph{{Adaptive Monte
+  Carlo augmented with normalizing flows}},
+  \href{https://arxiv.org/abs/2105.12603}{{\ttfamily 2105.12603}}.
+
+\bibitem{Singha:2021nht}
+A.~Singha, D.~Chakrabarti and V.~Arora, \emph{{Generative learning for the
+  problem of critical slowing down in lattice Gross Neveu model}},
+  \href{https://arxiv.org/abs/2111.00574}{{\ttfamily 2111.00574}}.
+
+\bibitem{Joo:2019byq}
+{\scshape USQCD} collaboration, B.~Jo{\'o}, C.~Jung, N.~H. Christ, W.~Detmold,
+  R.~Edwards, M.~Savage et~al., \emph{{Status and Future Perspectives for
+  Lattice Gauge Theory Calculations to the Exascale and Beyond}},
+  \href{http://dx.doi.org/10.1140/epja/i2019-12919-7}{\emph{Eur. Phys. J. A}
+  {\bfseries 55} (2019) 199},
+  [\href{https://arxiv.org/abs/1904.09725}{{\ttfamily 1904.09725}}].
+
+\bibitem{Tabak2010:deb}
+E.~G. Tabak and E.~Vanden-Eijnden, \emph{{Density estimation by dual ascent of
+  the log-likelihood}},
+  \href{http://dx.doi.org/cms/1266935020}{\emph{Communications in Mathematical
+  Sciences} {\bfseries 8} (2010) 217--233}.
+
+\bibitem{Kobyzev:2019nfa}
+I.~Kobyzev, S.~J. Prince and M.~A. Brubaker, \emph{{Normalizing Flows: An
+  Introduction and Review of Current Methods}},
+  \href{http://dx.doi.org/10.1109/TPAMI.2020.2992934}{\emph{Transactions on
+  Pattern Analysis and Machine Intelligence} (2020) 1--16},
+  [\href{https://arxiv.org/abs/1908.09257}{{\ttfamily 1908.09257}}].
+
+\bibitem{Papamakarios:2021nff}
+G.~Papamakarios, E.~Nalisnick, D.~Jimenez~Rezende, S.~Mohamed and
+  B.~Lakshminarayanan, \emph{{Normalizing Flows for Probabilistic Modeling and
+  Inference}}, {\emph{Journal of Machine Learning Research} {\bfseries 22}
+  (2021) 1--64}, [\href{https://arxiv.org/abs/1912.02762}{{\ttfamily
+  1912.02762}}].
+
+\bibitem{Albergo:2019eim}
+M.~S. Albergo, G.~Kanwar and P.~E. Shanahan, \emph{{Flow-based generative
+  models for Markov chain Monte Carlo in lattice field theory}},
+  \href{http://dx.doi.org/10.1103/PhysRevD.100.034515}{\emph{Phys. Rev. D}
+  {\bfseries 100} (2019) 034515},
+  [\href{https://arxiv.org/abs/1904.12072}{{\ttfamily 1904.12072}}].
+
+\bibitem{Kanwar:2020xzo}
+G.~Kanwar, M.~S. Albergo, D.~Boyda, K.~Cranmer, D.~C. Hackett, S.~Racani{\`e}re
+  et~al., \emph{{Equivariant flow-based sampling for lattice gauge theory}},
+  \href{http://dx.doi.org/10.1103/PhysRevLett.125.121601}{\emph{Phys. Rev.
+  Lett.} {\bfseries 125} (2020) 121601},
+  [\href{https://arxiv.org/abs/2003.06413}{{\ttfamily 2003.06413}}].
+
+\bibitem{Boyda:2020hsi}
+D.~Boyda, G.~Kanwar, S.~Racani{\`e}re, D.~J. Rezende, M.~S. Albergo, K.~Cranmer
+  et~al., \emph{{Sampling using {$SU(N)$} gauge equivariant flows}},
+  \href{http://dx.doi.org/10.1103/PhysRevD.103.074504}{\emph{Phys. Rev. D}
+  {\bfseries 103} (2021) 074504},
+  [\href{https://arxiv.org/abs/2008.05456}{{\ttfamily 2008.05456}}].
+
+\bibitem{Nicoli:2020njz}
+K.~A. Nicoli, C.~J. Anders, L.~Funcke, T.~Hartung, K.~Jansen, P.~Kessel et~al.,
+  \emph{{Estimation of Thermodynamic Observables in Lattice Field Theories with
+  Deep Generative Models}},
+  \href{http://dx.doi.org/10.1103/PhysRevLett.126.032001}{\emph{Phys. Rev.
+  Lett.} {\bfseries 126} (2021) 032001},
+  [\href{https://arxiv.org/abs/2007.07115}{{\ttfamily 2007.07115}}].
+
+\bibitem{Albergo:2021vyo}
+M.~S. Albergo, D.~Boyda, D.~C. Hackett, G.~Kanwar, K.~Cranmer, S.~Racani{\`e}re
+  et~al., \emph{{Introduction to Normalizing Flows for Lattice Field Theory}},
+  \href{https://arxiv.org/abs/2101.08176}{{\ttfamily 2101.08176}}.
+
+\bibitem{DelDebbio:2021qwf}
+L.~Del~Debbio, J.~M. Rossney and M.~Wilson, \emph{{Efficient Modelling of
+  Trivializing Maps for Lattice {$\phi^4$} Theory Using Normalizing Flows: A
+  First Look at Scalability}},
+  \href{https://arxiv.org/abs/2105.12481}{{\ttfamily 2105.12481}}.
+
+\bibitem{Hackett:2021idh}
+D.~C. Hackett, C.-C. Hsieh, M.~S. Albergo, D.~Boyda, J.-W. Chen, K.-F. Chen
+  et~al., \emph{{Flow-based sampling for multimodal distributions in lattice
+  field theory}},  \href{https://arxiv.org/abs/2107.00734}{{\ttfamily
+  2107.00734}}.
+
+\bibitem{deHaan:2021erb}
+P.~de~Haan, C.~Rainone, M.~C.~N. Cheng and R.~Bondesan, \emph{{Scaling Up
+  Machine Learning For Quantum Field Theory with Equivariant Continuous
+  Flows}},  \href{https://arxiv.org/abs/2110.02673}{{\ttfamily 2110.02673}}.
+
+\bibitem{Wu:2020snf}
+H.~Wu, J.~K{\"o}hler and F.~No{\'e}, \emph{{Stochastic Normalizing Flows}},
+  \href{https://arxiv.org/abs/2002.06707}{{\ttfamily 2002.06707}}.
+
+\bibitem{JimenezRezende:2015viw}
+D.~Jimenez~Rezende and S.~Mohamed, \emph{{Variational Inference with
+  Normalizing Flows}},  in \emph{{Proceedings of the 32nd International
+  Conference on Machine Learning}} (F.~Bach and D.~Blei, eds.), vol.~37 of
+  \emph{Proceedings of Machine Learning Research}, (Lille, France),
+  pp.~1530--1538, PMLR, 07--09 Jul, 2015,
+  \href{https://arxiv.org/abs/1505.05770}{{\ttfamily 1505.05770}},
+  \href{{http://proceedings.mlr.press/v37/rezende15.html}}{{http://proceedings.mlr.press/v37/rezende15.html}}.
+
+\bibitem{Kullback:1951zyt}
+S.~Kullback and R.~A. Leibler, \emph{{On Information and Sufficiency}},
+  \href{http://dx.doi.org/10.1214/aoms/1177729694}{\emph{The Annals of
+  Mathematical Statistics} {\bfseries 22} (1951) 79--86}.
+
+\bibitem{Dinh:2014nni}
+L.~Dinh, D.~Krueger and Y.~Bengio, \emph{{NICE: Non-linear Independent
+  Components Estimation}},  \href{https://arxiv.org/abs/1410.8516}{{\ttfamily
+  1410.8516}}.
+
+\bibitem{Dinh:2016deu}
+L.~Dinh, J.~Sohl-Dickstein and S.~Bengio, \emph{{Density estimation using Real
+  NVP}},  \href{https://arxiv.org/abs/1605.08803}{{\ttfamily 1605.08803}}.
+
+\end{thebibliography}\endgroup
