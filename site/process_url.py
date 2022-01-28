@@ -14,10 +14,10 @@ from transformers import TFAutoModelForSeq2SeqLM, AutoTokenizer
 
 
 def do_preprocessing(file):
-    # bashcommand = "pandoc test/" + file + " +RTS -M6000m -RTS --verbose --toc --trace --mathjax -f latex -t plain --template=template.plain --wrap=none -o test/" + file[
-    #                                                                                                                                                                 :-4] + ".txt"
-    bashcommand = "pandoc test/" + file + " +RTS -M6000m -RTS --toc  --mathjax -f latex -t plain --template=template.plain --wrap=none -o test/" + file[
-                                                                                                                                                   :-4] + ".txt"
+    # bashcommand = "pandoc test/" + file + " +RTS -M6000m -RTS --verbose --toc --trace --mathjax -f latex -t plain
+    # --template=template.plain --wrap=none -o test/" + file[ :-4] + ".txt"
+    bashcommand = "pandoc test/" + file + " +RTS -M6000m -RTS --toc  --mathjax -f latex -t plain " \
+                                          "--template=template.plain --wrap=none -o test/" + file[:-4] + ".txt"
 
     # Ajouter les balises --verbose et --trace pour avoir un output console
     process = subprocess.Popen(bashcommand.split(), stdout=subprocess.PIPE)
@@ -97,7 +97,7 @@ def my_function(file_name, n, m):
         f.write(i + '\n')
     f.close()
 
-    f = open("toto", "w")
+    f = open("text_modified", "w")
     f.write(text_modified)
     f.close()
 
@@ -178,7 +178,6 @@ def main(argv, model, tokenizer, length):
     os.makedirs("./test")
     pdf_url = argv
     doc = process_url(pdf_url)
-    # with libreq.urlopen('https://arxiv.org/e-print/2112.04484') as url:
     with libreq.urlopen(doc) as url:
         r = url.read()
     # print(r)

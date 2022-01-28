@@ -27,7 +27,7 @@
         $.ajax({
             type: "POST",
             url: "/process_url.py",
-            data: { "param": input, "length":30 },
+            data: { "param": input, "length":50 },
             datatype:'JSON',
             success: function(data){
                     $("#text").html(data.result);
@@ -43,7 +43,7 @@
         $.ajax({
             type: "POST",
             url: "/process_url.py",
-            data: { "param": input, "length":count*30 },
+            data: { "param": input, "length":count*50 },
             datatype:'JSON',
             success: function(data){
                     $("#text").html(data.result);
