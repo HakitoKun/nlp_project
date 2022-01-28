@@ -5,7 +5,14 @@
 {% endblock %}
 
 {% block body %}
+<header class="header">
+        <div class="container">
+            <h3>Contributors: Eddy CAI, Tom Taranto, Rakib SHEIKH, Hakim MBAE</h3>
+        </div>
+</header>
+
 <div class="content">
+    <div class="pt-5 text-white">
     <h1>Résume Ton Doc</h1>
     <h3>Grâce à nous, vous pourrez à présent en quelques lignes, résumer et comprendre des documents de plusieurs pages.</h3>
 
@@ -16,7 +23,7 @@
     <h3 style="text-align: center">
         <button onclick="postData();$('#loading').show();">Résume moi ça</button>
     </h3>
-    <div id="loading" style="display:none;"><img src="static/loading.gif" alt="" width="50" height="50"/>Loading!</div>
+    <div id="loading" style="display:none;"><img src="static/img/loading.gif" alt="" width="50" height="50"/>Loading!</div>
 
     <h4 style="text-align: center">Résumé</h4>
 
@@ -25,5 +32,10 @@
     <h3 style="text-align: center">
         <button onclick="postData2();$('#loading').show();">Load more</button>
     </h3>
+    </div>
 </div>
+
+<footer>
+        <div><img src="static/img/Logo-ESGI.jpg" alt="" width="200" height="150"/></div>
+</footer>
 {% endblock %}

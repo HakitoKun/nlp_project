@@ -45,3 +45,28 @@ td {
     width: 70%;
 }
 
+#banner {
+  background: url("../img/fond.jpg") top center;
+  background-size: contain;
+  background-color: #87CEFA;
+  position: relative;
+  color: #f5f1f1;
+  margin-bottom:0;
+}
+
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+
+body {
+    min-height: 110vh;
+    background-color: #4ca1af;
+    background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%);
+}
+
+footer {
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+}
