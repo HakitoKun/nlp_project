@@ -45,15 +45,6 @@ td {
     width: 70%;
 }
 
-#banner {
-  background: url("../img/fond.jpg") top center;
-  background-size: contain;
-  background-color: #87CEFA;
-  position: relative;
-  color: #f5f1f1;
-  margin-bottom:0;
-}
-
 .text-small {
     font-size: 0.9rem !important;
 }
@@ -67,6 +58,6 @@ body {
 
 footer {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     padding: 5px;
 }
